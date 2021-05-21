@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FlowChart011/0.1.11": {
+        "runtime": {
+          "FlowChart011.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FlowChart011/0.1.11": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

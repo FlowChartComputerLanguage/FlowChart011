@@ -1,0 +1,49 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FlowChart011
+</name>
+</assembly>
+<members>
+<member name="T:FlowChart011.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:FlowChart011.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:FlowChart011.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:FlowChart011.MyFlowChartNameSpace.F_C">
+ <summary>
+ This is the shared Function and subroutines for the Flow Chart Program
+ </summary>
+</member>
+<member name="F:FlowChart011.MyFlowChartNameSpace.F_C.MyErrorList">
+ <summary>
+  list of error messages that are put into the flowchart to be displayed. 
+ </summary>
+</member>
+<member name="M:FlowChart011.MyFlowChartNameSpace.F_C.MyRenameSymbol(System.String,System.String)">
+<summary>   
+<param name="FromWhat" Fromwhat ="From"> This is the old Symbol Name</param>
+<param name="ToWhat" ToWhat = "To" >This is the the new symbol name</param>
+<para> Function MyRenameSymbol  This will rename the symbol and all of the use
+<!-- returns the number of times it change the symbol name (one for the symbol, and the rest in the flowchart.-->
+if thier is not a symbol with this name already. </para>
+<remarks>The symbol name can not be changed to be nothing.</remarks>
+</summary> 
+</member>
+<member name="M:FlowChart011.SymbolScreen.ToolStripButton8_Click(System.Object,System.EventArgs)">
+Update the Symbol (rewrite if old, create if old)
+</member>
+</members>
+</doc>

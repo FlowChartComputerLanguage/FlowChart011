@@ -1,0 +1,3125 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>FlowChart / Software Schematic P</title>
+<style type="text/css">
+.auto-style1 {
+	font-size: medium;
+}
+.auto-style2 {
+	font-size: large;
+}
+.auto-style3 {
+	margin-left: 40px;
+}
+.auto-style4 {
+	margin-left: 80px;
+}
+.auto-style6 {
+	font-size: xx-large;
+}
+.auto-style7 {
+	margin-left: 200px;
+}
+.auto-style8 {
+	font-size: x-large;
+}
+.auto-style9 {
+	margin-left: 120px;
+}
+.auto-style10 {
+	margin-left: 320px;
+}
+.auto-style11 {
+	margin-left: 160px;
+}
+.auto-style12 {
+	margin-left: 160px;
+	font-size: larger;
+	text-decoration: underline;
+}
+.auto-style13 {
+	font-size: larger;
+}
+.auto-style14 {
+	list-style-image: url('Icons/Big%20BlackDot.jpg');
+}
+.auto-style15 {
+	text-indent: 2px;
+	line-height: 150%;
+	margin-left: 7px;
+	margin-top: 8px;
+	margin-bottom: 7px;
+}
+.auto-style16 {
+	list-style-image: url('Icons/Big%20BlackDot.jpg');
+	margin-left: 80px;
+}
+</style>
+</head>
+
+<body>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font SIZE="6">FlowChart / Software Schematic Programmer Manual</font></p>
+<p class="auto-style2"></p>
+<p class="auto-style2">&nbsp;</p>
+<p class="auto-style2"><strong>FlowChart</strong></p>
+<p>&nbsp;</p>
+<p><font SIZE="3">Chapter 1 <a href="#Introduction">Introduction</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#FlowChart Screen 1">FlowChart</a>, <a href="#Symbol Screen Overview 1">
+Symbol</a></font></p>
+<p><a NAME="User_Interaction0"></a><span class="auto-style1">Chapter 2 
+<a href="#Button,_Button_Whos_Got_the_Button">Button, Button Who's Got the Button?</a></span></p>
+<p><font SIZE="3">Chapter 3 <a href="#SymbolsChapter">Symbols</a> </font></p>
+<p><font SIZE="3">Chapter 4 <a HREF="#Window_Views">Screens</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#View_FlowChart:_4">FlowChart</a>, <a href="#Vies_Symbols_4">Symbol</a>,
+<a href="#Options_screen_4">Option</a>, <a href="#File_Input_Output_screen_4">
+Input/Output</a></font></p>
+<p><font SIZE="3">Chapter 5&nbsp; <a HREF="#Items_on_the_screen.">Objects on the 
+Screen</a></font></p>
+<p><font SIZE="3">Chapter 6 <a HREF="#File_Importing_">Importing/Export file 
+formats</a></font>&nbsp;</p>
+<p><font SIZE="3">Chapter 7</font> <a href="#Support_Tables"> <span class="auto-style1">Support</span> Tables</a></p>
+<p><font SIZE="3">Chapter 8</font> How to use FlowChart:</p>
+<p class="auto-style3">For programming languages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p class="auto-style3">For Data Flow Programming</p>
+<p class="auto-style3">As a Hardware Schematic simulator.</p>
+<p><font SIZE="3">Chapter 9</font> Support Tables&nbsp;&nbsp;&nbsp; Color Table&nbsp;&nbsp;&nbsp; 
+Data Type Table</p>
+<ul class="auto-style4">
+	<li>
+	<p>S<a HREF="#Syntax_Summary_for_Symbol_Library">ummary of the Import/Export 
+	file</a></p>
+	</li>
+	<li>
+	<p><a HREF="#Standard:">Standard 2020</a></p>
+	</li>
+	<li>
+	<p>Message numbers</p>
+	</li>
+	<li>
+	<p><a HREF="#Glossary">Glossa</a>ry</p>
+	</li>
+</ul>
+<p>&nbsp;</p>
+<p STYLE="page-break-before: always" class="auto-style6">Chapter 1&nbsp; 
+<a name="Introduction">Introduction</a></p>
+<p>&nbsp;</p>
+<p>FlowChart Computer Language is an attempt to be able to program in any 
+computer language via the use of visual FlowCharting.&nbsp; Actually it's more 
+accurate to call it a software schematic.&nbsp; A FlowChart is usuallty thought 
+of as the logical flow of a program.&nbsp; A Data Flow Diagram is a program 
+method where each&nbsp; 'symbol' works when all of the required data arrives to 
+it.&nbsp; A software schematic has both logic and data flow.&nbsp; This 
+FlowChart program works as a software schematic, a Data Flow Diagram, and as a 
+traditional FlowChart.</p>
+<p>&nbsp;</p>
+<p>FlowChart is made to be used by anyone, in any language. It is designed to be 
+used with graphics so that it is not dependent on text based programming.&nbsp; 
+This means that it can be used by anyone whether or not they know the letters 
+used by most European languages.&nbsp; FlowChart is intended to be used without 
+language.&nbsp; As people use this program and come up with ideas to refine it, 
+it will become more language independent.</p>
+<p>&nbsp;</p>
+<p>FlowChart can be used for a number reasons. It allows the source code of a 
+program to be documented in a form that is easy for anyone to understand.&nbsp; 
+It is made to adapt to any new computer language that has logic and data flow.&nbsp; 
+It is not intended for a specific spoken, written, or programming language. 
+People who speak English should be able to use the process as easily as someone 
+who speaks or writes in another language.</p>
+<p>&nbsp;</p>
+<p>FlowChart is a picture oriented representation of what the source code of a 
+computer program is doing. It is&nbsp;therefore easier to understand providing that 
+the symbol designs makes sense to them.&nbsp;&nbsp;There is an assumption that certain 
+symbols have common universal meaning.&nbsp; The stop sign, a circle with an X 
+through it, a stick figure of a man, or a woman, these all have universal 
+meaning.&nbsp; So instead of words, there are picture symbols that represent the 
+operations of the steps that a computer program is doing.&nbsp; </p>
+<p>&nbsp;</p>
+<p>The text of each symbol of FlowChart can be changed to how it uses the logic 
+and data flow.&nbsp; Changing the text of a symbol will change it.&nbsp; So 
+symbols can be changed into another programming language, or the dialect of the 
+compiler.&nbsp; This enables anyone who understands a FlowChart to be able to 
+understand what the program is doing, even if they do not know the computer 
+language that it is using.&nbsp;&nbsp; </p>
+<p>&nbsp;</p>
+<p>The FlowChart program translates from or to almost any programming language.&nbsp; 
+Of course, like anything new and complex, these first versions will have lots of 
+bugs.&nbsp; With the hundreds of dialects of just the BASIC computer language, 
+it would be impossible for me to code and test for every one.&nbsp; So I am 
+relying on others to help test other languages, finding bugs, and add new ideas.</p>
+<p>&nbsp;</p>
+<p>The symbols that make up a flow chart can be customized to any computer 
+language.&nbsp; Conversion between computer languages can be made on a line to 
+line conversion. This should make it easier to translate any computer language 
+into another computer language by changing each of the symbol's text that 
+creates the computer program source code.&nbsp; This requires that the 
+programming language has a flow of logic, uses variable names, and has a keyword 
+syntax. It will not take into consideration the inherent advantages or pitfalls 
+of each computer language.</p>
+<p>&nbsp;</p>
+<p>One of the goals of FlowChart is to have a universal symbol language that can 
+be compiled into any computer language.&nbsp; Another goal is to be able to have 
+programmers who can create code in any computer language without having to know 
+the syntax and detail requirements of a specific computer language.</p>
+<p>&nbsp;</p>
+<p><br />
+The FlowChart has two basic units.</p>
+<p>&nbsp;</p>
+<p><strong><a name="FlowChart Screen 1">FlowChart Screen:</a></strong></p>
+<p>&nbsp;</p>
+<p><a HREF="Icons/Screen%20Menu%20FlowChart.jpg"><font COLOR="#000080">
+<img ALIGN="BOTTOM" ALT="FlowChart Screen Menu" BORDER="1" HEIGHT="219" NAME="graphics4" SRC="Screen%20Menu%20FlowChart.jpg" WIDTH="881" /></font></a></p>
+<p>&nbsp;</p>
+<p>The FlowChart screen shows what a program does. It shows the flow of logic 
+and data from one symbol to another.&nbsp; This represents what a computer 
+program is doing, how the data is moved around, tested, and performs 
+computations. The symbols can be as simple as a single machine instruction, or 
+as complicated as a batch file that runs multiple programs.&nbsp; </p>
+<p>&nbsp;</p>
+<p>FlowChart is made up of three basic items:</p>
+<ul>
+	<li>
+	<p>Paths showing colored and styled lines that connect the symbol points 
+	together. They show the flow of logic, and data.</p>
+	</li>
+</ul>
+<ul>
+	<li>
+	<p>Symbols show each step of a program.&nbsp;</p>
+	</li>
+	<li>
+	<p>Constants will connect paths with data.</p>
+	</li>
+</ul>
+<p STYLE="page-break-before: always">&nbsp;</p>
+<p>&nbsp;</p>
+<p><a NAME="Symbols"></a><a name="Symbol Screen Overview 1"><strong>Symbol Screen</strong>:</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+<img ALIGN="BOTTOM" BORDER="0" HEIGHT="50%" NAME="graphics5" SRC="Screen%20Menu%20Symbol%20First.jpg" WIDTH="50%" /></p>
+<p>&nbsp;</p>
+<p>Each symbol is made up of a number of parts:</p>
+<ul>
+	<li>
+	<p>unique name</p>
+	</li>
+	<li>
+	<p>colored lines</p>
+	</li>
+	<li>
+	<p>points where paths connect, each point has:</p>
+	<ul>
+		<li>
+		<p>a name</p>
+		</li>
+		<li>
+		<p>a data type such as an integer, a real number, a character string, a 
+		record structure, an array, and any other data type of a specific 
+		compiler</p>
+		</li>
+		<li>
+		<p>either an input, output, or both</p>
+		</li>
+		<li>
+		<p>optional or required connected to a path</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p>syntax code that is used to create the actual program source code using 
+	the point name&nbsp;&nbsp;&nbsp; </p>
+	</li>
+</ul>
+<ul>
+	<li>
+	<p>description</p>
+	</li>
+	<li>
+	<p>file name</p>
+	</li>
+	<li>
+	<p>version/author</p>
+	</li>
+	<li>
+	<p>an example of the program code</p>
+	<ol TYPE="a">
+		<li>
+		<p>which can be used to make the syntax of the symbol, according to the 
+		rules of FlowChart</p>
+		</li>
+	</ol>
+	</li>
+	<li>
+	<p>notes</p>
+	</li>
+	<li>
+	<p>a stroke mouse movement&nbsp; (not yet implemented)&nbsp; </p>
+	</li>
+	<li>
+	<p>machine opcode (not yet implemented)</p>
+	</li>
+</ul>
+<p STYLE="page-break-before: always">&nbsp;</p>
+<p STYLE="page-break-before: always"><a NAME="User_Interaction"></a>
+<span class="auto-style6">Chapter&nbsp; 2&nbsp; 
+<a name="Button,_Button_Whos_Got_the_Button">Button, Button Who's Got the Button?</a></span></p>
+<p STYLE="page-break-before: always">
+<br />
+</p>
+<p>The symbol screen has the following buttons on two toolstrips:</p>
+<p>The top line has these buttons:</p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;
+<img ALIGN="BOTTOM" BORDER="0" HEIGHT="32" NAME="graphics6" SRC="ButtonShowSymbolScreen.jpg" WIDTH="32" />&nbsp;&nbsp; will 
+take you to the FlowChart screen.&nbsp; </p>
+<p>&nbsp;</p>
+<p>
+&nbsp;&nbsp;&nbsp;
+<img ALIGN="BOTTOM" BORDER="0" HEIGHT="32" NAME="graphics7" SRC="ButtonShowOptions.jpg" WIDTH="32" />&nbsp;&nbsp;
+<font SIZE="3">will take you to the Option screen.</font></p>
+<p>&nbsp;</p>
+<p>
+&nbsp;&nbsp;&nbsp;
+<img ALIGN="BOTTOM" BORDER="0" HEIGHT="32" NAME="graphics8" SRC="file:///C:/Users/Owner/Documents/My%20Web%20Sites/WebSite1/Icons/ButtonAddPoint%20A.jpg" WIDTH="32" />&nbsp;&nbsp; 
+Will put a new point in the symbol graphics area. Before the add point button is 
+enabled,&nbsp; the 'select datatype dropdown button' must have been used.&nbsp; 
+A point name must be entered into the text area of the point names. &nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<img ALIGN="BOTTOM" BORDER="0" NAME="graphics9" SRC="file:///C:/Users/Owner/Documents/My%20Web%20Sites/WebSite1/Icons/ButtonAddLines.jpg" />&nbsp;&nbsp; Start 
+a line with mouse button pressed down, and stop the line where the mouse button 
+is release. It will use the defaults which are selected color, selected line 
+style, and selected line width.</p>
+<p>&nbsp;</p>
+<p>
+&nbsp;&nbsp;&nbsp;
+<img ALIGN="BOTTOM" BORDER="0" HEIGHT="32" NAME="graphics10" SRC="ButtonMoveToHere.jpg" WIDTH="32" />
+<font SIZE="3">&nbsp; will select the closest point to the mouse button when it is 
+pressed down, and moved to where the mouse button is released.</font>&nbsp;</p>
+<p>&nbsp;</p>
+<p>
+&nbsp;&nbsp;&nbsp;
+<img ALIGN="BOTTOM" BORDER="0" HEIGHT="32" NAME="graphics11" SRC="ButtonDeleteObject.jpg" WIDTH="32" /><font SIZE="3">&nbsp; will 
+delete the first closest point when the mouse button is released. </font>
+<strong><font SIZE="3">Tip:</font></strong><font SIZE="3"> Move the point or end 
+of a line to a remote, separate location before deleting.&nbsp; Make sure the 
+point or line is correct before pushing the delete button.</font></p>
+<p>&nbsp;</p>
+<p>
+&nbsp;&nbsp;&nbsp;
+<img ALIGN="BOTTOM" BORDER="0" HEIGHT="32" NAME="graphics12" SRC="ButtonStartNewSymbol.jpg" WIDTH="32" />&nbsp;&nbsp; 
+will clear everything to start a new symbol.&nbsp; <strong>Tip:</strong>&nbsp; 
+If you just type over a symbol name, that will rename the symbol.&nbsp; Only if 
+you start with a blank symbol name will it make a new one.</p>
+<p>&nbsp;</p>
+<p>
+&nbsp;&nbsp;&nbsp;
+<img ALIGN="BOTTOM" BORDER="0" HEIGHT="32" NAME="graphics13" SRC="ButtonAddSymbol.jpg" WIDTH="32" />&nbsp;&nbsp;&nbsp; 
+will redraw the screen&nbsp;</p>
+<p>&nbsp;</p>
+<p>The second line of menu buttons are:</p>
+<p>&nbsp;</p>
+<p>&nbsp;<img ALIGN="BOTTOM" BORDER="0" HEIGHT="32" NAME="graphics14" SRC="DropDownSymbolSelect.jpg" WIDTH="32" /><font SIZE="3">&nbsp; will 
+select the an existing symbol to work on.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;<img ALIGN="BOTTOM" ALT="Rotation Drop Down" BORDER="0" HEIGHT="32" NAME="graphics15" SRC="DropDownButtonButtonRotate.jpg" WIDTH="32" />
+<font SIZE="3">&nbsp; will rotate the symbol when placed on the FlowChart screen.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;
+<img ALIGN="BOTTOM" BORDER="0" HEIGHT="32" NAME="graphics16" SRC="ButtonDataTypeSelector.jpg" WIDTH="32" />&nbsp;&nbsp;
+<font SIZE="3">Data typing is very important in some languages and operating 
+systems, while not in others.&nbsp; This will give a list of all of the data 
+types currently available.</font></p>
+<p>&nbsp;</p>
+<p>
+<img ALIGN="BOTTOM" ALT="Line Style" BORDER="0" HEIGHT="32" NAME="graphics17" SRC="DropDownButtonLineStyle.jpg" WIDTH="32" />&nbsp;
+<font SIZE="3">line styles include solid, dot, dash, dash-dot, dash-dot-dot.&nbsp; 
+There is no meaning of the line style at this time.&nbsp; Use only solid at this 
+time only.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;<img ALIGN="BOTTOM" ALT="Color Drop Down" BORDER="0" HEIGHT="32" NAME="graphics18" SRC="DropDownButtonSelectColor.jpg" WIDTH="32" />&nbsp;
+<font SIZE="3">select&nbsp;the name of the line colors.&nbsp; </font><strong>
+<font SIZE="3">Tip:</font></strong><font SIZE="3"> Data type also use the same 
+color names to make points and paths. </font>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;<img ALIGN="BOTTOM" ALT="Width and Size" BORDER="0" HEIGHT="32" NAME="graphics19" SRC="DropDownButtonLineWidth.jpg" WIDTH="32" />&nbsp;
+<font SIZE="3">sets the default line and point size.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;
+<img ALIGN="BOTTOM" ALT=".Input Output" BORDER="0" HEIGHT="32" NAME="graphics20" SRC="DropDownInputOutput.jpg" WIDTH="32" />
+<font SIZE="3">defines if a point is asking for input or giving output or both.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;
+<img ALIGN="BOTTOM" ALT="Byte Size" BORDER="0" HEIGHT="32" NAME="graphics21" SRC="DropDownButtonNumberOfBytes.jpg" WIDTH="32" />
+<font SIZE="3">sets the number of bytes for a data type.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;
+<img ALIGN="BOTTOM" ALT="Path Ends" BORDER="0" HEIGHT="32" NAME="graphics22" SRC="DropDownButtonLineStart.jpg" WIDTH="32" />&nbsp;&nbsp;
+<img ALIGN="BOTTOM" ALT="Path end" BORDER="0" HEIGHT="32" NAME="graphics23" SRC="DropDownButtonLineEnd.jpg" WIDTH="32" />
+<font SIZE="3">selects the start and end of paths. (not yet implemted)</font></p>
+<p>&nbsp;</p>
+<p>The user can basically do things with and to symbols. </p>
+<ul>
+	<li>
+	<p>selecting a symbol will display it to be edited</p>
+	</li>
+	<li>
+	<p>create a complete new symbol from scratch</p>
+	</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a NAME="Buttons_FlowChart"></a><span class="auto-style13"><strong>FlowChart Computer Language Editor buttons:&nbsp;</strong></span></p>
+<p>A FlowChart is drawn by selecting a start symbol and placing it on the 
+screen.</p>
+<p>&nbsp;&nbsp; &nbsp;<img ALIGN="BOTTOM" ALT="Select a symbol" BORDER="0" HEIGHT="32" NAME="graphics24" SRC="DropDownSymbolSelect.jpg" WIDTH="32" />&nbsp;&nbsp;
+<font SIZE="3">the symbol button gives a dropdown of existing symbol names.&nbsp;&nbsp;
+</font>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="auto-style13"><strong>Option screen buttons:</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonShowFlowChartScreen.jpg" width="32" />&nbsp;&nbsp;this button will show the FlowChart editor screen.</p>
+<p>&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonShowSymbolScreen.jpg" width="32" />&nbsp; this 
+button will show the Symbol screen</p>
+<p>&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonDeleteErrors.jpg" width="32" />&nbsp; this 
+button will delete all of the FlowChart errors.&nbsp; Error records are 
+made for a few of the possible errors.&nbsp; This is because later versions will 
+be looking at only these errors when changes are made to see if there is still a 
+problem.&nbsp; Only these errors are put into the FlowChart data.&nbsp; 
+All other errors just show a message box.</p>
+<p class="auto-style4"><a name="GraphicError1001">1001</a> Symbol does not have a /point CameFromLine,<br />
+1002 Symbol does not have a /point GotoNextLine,<br />
+1003 A path goes to two or more places (A logic path can come from many places, but 
+can only goto one place),<br />
+1004 Points of a symbol is not connected to any path,<br />
+1005 Paths are not connected to anything - both ends must be connected.,<br />
+1006 Not all of the point names are in the syntax,<br />
+1007 The syntax does not match the program macro text.,<br />
+1008 Make sure that the point names are in the point list,<br />
+1009 All paths must have at least one output or constant connected.,<br />
+1010 All points have a valid datatype,<br />
+1011 All datatype have a valid color,<br />
+1012 Colors are valid names, they can only be assigned Microsoft color names,<br />
+1013 All point names are in either the micro code text and the syntax,<br />
+1014 No duplicate point names,<br />
+1015 No syntax code, and there is no macro code to make the syntax code,<br />
+1016 Two paths meet here with different path names</p>
+<p>&nbsp;&nbsp; &nbsp;
+<img height="32" src="Icons/ButtonDeleteSymbol_s.jpg" width="32" />&nbsp;&nbsp; deletes the symbols that are defined and not used in 
+this FlowChart.</p>
+<p>&nbsp;&nbsp; &nbsp;
+<img height="31" src="file:///G:/FlowChartComputerLanguage/FlowChartHelpFiles/Junk%20Icons/ButtonCheckMark.jpg" width="32" />&nbsp;&nbsp; 
+checks all it can,&nbsp;warning: it takes a very long time.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonDumpTruck1.jpg" width="32" />&nbsp;&nbsp; output into the files 
+dump1.txt, dump2.txt, and dump3.txt information.&nbsp;</p>
+<p>&nbsp;</p>
+<p class="auto-style13"><strong>File input output screen buttons:</strong></p>
+<p>&nbsp;</p>
+<p>This is the screen for all input and output files.&nbsp; </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonShowFlowChartScreen.jpg" width="32" />&nbsp;&nbsp; 
+shows the FlowChart screen</p>
+<p>&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonShowSymbolScreen.jpg" width="32" />&nbsp;&nbsp; 
+&nbsp;shows the Symbol screen</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonShowOptions.jpg" width="32" />&nbsp;&nbsp; 
+shows the Option screen</p>
+<p>&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonOpenFlowChartFile.jpg" width="32" />&nbsp;&nbsp;&nbsp; 
+import a FlowChart or symbol file.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonSaveAsFileFolder.jpg" width="32" />&nbsp;&nbsp;&nbsp;export 
+a FlowChart or symbol file.</p>
+<p>&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonFlowchartToSourceFileFolder.jpg" width="32" />&nbsp;&nbsp; 
+&nbsp;convert from a FlowChart and export to a text source file.</p>
+<p>&nbsp;&nbsp;&nbsp;
+<img height="32" src="Icons/ButtonSourceToFlowchartFileFolder.jpg" width="32" />&nbsp;&nbsp;&nbsp; 
+input a text source code file, and make&nbsp;a FlowChart with 
+symbols.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="auto-style6">Chapter 3&nbsp;&nbsp; </span>
+<a name="SymbolsChapter"><span class="auto-style6">Symbols</span></a></p>
+<p>All programs must have a symbol named, 'Start' which shows where the program 
+begins.&nbsp; Even subroutines and functions must have a start.&nbsp; Device 
+drivers will have multiple entry points coming out of the start.&nbsp;&nbsp; </p>
+<p>&nbsp;</p>
+<p>A FlowChart is expanded by placing more symbols on the FlowChart screen. Each 
+symbol added will define an instruction of what the program is does. </p>
+<p>&nbsp;</p>
+<p>The diagram will be completed by adding symbols and paths between the dots of 
+symbols.&nbsp; Make sure that the points have matching colors.&nbsp; The color 
+and size of the dots on symbols show the datatype being used by each symbol.</p>
+<p>&nbsp;</p>
+<ul ALIGN="ABSMIDDLE" HEIGHT="16" SRC="FlowChartHelp_html_4191c4bd.gif" WIDTH="16">
+	<p>After the FlowChart is complete then save the FlowChart. </p>
+	<p>&nbsp;</p>
+	<p>Next step is to generate and save the source code.&nbsp; If there are no 
+	errors, then the program is for whatever compiler will be used.&nbsp;&nbsp; 
+	Future versions will compile into machine code.&nbsp; Then print out your 
+	FlowChart.</p>
+	<p>&nbsp;</p>
+</ul>
+<ol>
+	<ol>
+		<ol>
+			<ol>
+				<p><a NAME="Modifying_Symbols"></a>Making and Modifying Symbols</p>
+			</ol>
+		</ol>
+	</ol>
+</ol>
+<p>&nbsp;</p>
+<p>This is done just like making a FlowChart, except that it works on the symbol 
+screen where points, lines, and various texts are added, modified, or deleted.</p>
+<ul>
+	<li>
+	<p>Entering in the macro code text to create the named points and the syntax 
+	string.&nbsp; Then just add the lines.</p>
+	</li>
+	<li>
+	<p>To add a line, select the color desired in the color drop down.</p>
+	</li>
+	<li>
+	<p>To add a point, select the data type from the data type drop down. </p>
+	</li>
+</ul>
+<p>This lowest level symbol has the graphic picture for the symbol that is seen 
+on the screen and in the printouts.&nbsp; A symbol has syntax to create source 
+code.&nbsp; This syntax is nothing more than programmer code where the point 
+names are replaced with the path names, so that one symbol can be used over and 
+over again to create source code that is&nbsp; unique for each symbol placed.&nbsp; 
+When macro code is entered, the syntax is automatically made.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Each symbol is one or two functions.</p>
+<ul>
+	<li>
+	<p>One is just another FlowChart because it's a subroutine or function in 
+	that computer language.</p>
+	</li>
+	<li>
+	<p>Two is the bottom level definition of the computer language.</p>
+	</li>
+</ul>
+<p>&nbsp;</p>
+<p>Both of these functions have a symbol text that defines how the graphics are 
+converted into text.&nbsp; A FlowChart for a subroutine or function will have 
+two parts: </p>
+<ul>
+	<li>
+	<p>One is a FlowChart that defines the routine being called, such as,&nbsp;</p>
+	<p>Function SubRoutine(X as integer, Y as real) as long</p>
+	</li>
+	<li>
+	<p>Two is a symbol that you place on flowcharts to call that routine, such 
+	as :</p>
+	</li>
+</ul>
+<p>&nbsp;Call SubRoutine(x, y)&nbsp;</p>
+<p><strong>TIP:</strong>&nbsp; Think of each symbol as doing something, whether 
+it is just adding two numbers together or sorting a megabyte data file.&nbsp; 
+Think of the paths that go between the symbols as the data is flowing between 
+symbols.</p>
+<p>&nbsp;</p>
+<p>Some symbols will use data as input on the paths, others will set data as 
+output on the paths, and others will do both by modifying the input at the 
+start, and then putting it as output at the end. </p>
+<p>&nbsp;</p>
+<p>Each symbol point will show as input, output, both or other options in the 
+symbol&nbsp; graphics as arrows showing the direction(s) of the logic or data 
+flow.</p>
+<p>&nbsp;</p>
+<p><a NAME="Window_Views"></a><span class="auto-style6">Chapter 4&nbsp; FlowChart Computer Language Screen 
+Views</span></p>
+<p><a name="Options_screen_4"><span class="auto-style13"><strong>Options screen</strong></span></a>:</p>
+<p>&nbsp;&nbsp;&nbsp; &nbsp;<img height="1438" src="Icons/Screen%20Options.jpg" width="2205" /></p>
+<p>The option screen is where FlowChart starts at.&nbsp; The first think that 
+must be done is to select the language class and dialect of the computer 
+language.&nbsp; No other buttons will be available until you do.&nbsp; When it 
+is selected it will load the symbols found in the file in the directory 
+Languages/class/dialect Definition.Symbol.&nbsp; </p>
+<p>&nbsp;</p>
+<p>Option numbers 1-13, and 17-18, and 20-21 control what is displayed. </p>
+<p>Option 14 controls if all paths must be orthogonal (up/down right/left only) 
+So that when you place a path only the longest leg will be placed if this has a 
+check mark. </p>
+<p>Option 15 controls if FlowChart is allowed to move symbols to make room to 
+auto route paths. and to keep symbols from on top of each other. </p>
+<p>Option 18 this is used to stop using the clipboard to pass source code back 
+and forth between programs. If it is not disabled then another computer program 
+must watch the clipboard and make changes as needed. See Preprocessor / 
+Postprocessor chapter. </p>
+<p>Option 19 controls if the auto route is allowed to work (right now, they only 
+way to turn auto on is with a /route in the tool strip text box) </p>
+<p>the remaining options should all be turned off. (but I left them in, incase 
+you needed to find a problem. cause the program still has lots of unsolved 
+problems.)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="auto-style13"><strong>&nbsp;</strong></span><a name="File_Input_Output_screen_4"><span class="auto-style13"><strong>File Input Output screen</strong></span></a>:</p>
+<p>&nbsp;&nbsp;&nbsp;
+<img height="1125" src="Icons/ScreenFileInputOutput.jpg" width="1257" />&nbsp;</p>
+<p>The progress bars show how much memory is set aside.&nbsp; The green bars 
+show how much memory is being used.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a NAME="View_FlowChart:_4"><span class="auto-style13"><strong>FlowChart Editor 
+Screen</strong></span></a><span class="auto-style13"><strong>:</strong></span></p>
+<p>&nbsp;</p>
+<p>
+<img ALIGN="LEFT" BORDER="0" HEIGHT="256" NAME="graphics2" SRC="Screen%20Menu%20FlowChart.jpg" WIDTH="954" /><br CLEAR="LEFT" />
+<br />
+<br />
+</p>
+<p>FlowChart is used to visually show a computer program's execution.</p>
+<p>&nbsp;</p>
+<p>Converting an existing computer program to the FlowChart Computer Language is 
+one method of using FlowChart.&nbsp; Another method is to use&nbsp; FlowChart to 
+create a program.</p>
+<p>&nbsp;</p>
+<p>Subroutines and functions will be labeled inside the start symbol.&nbsp; It 
+will be in the micro text and also in the syntax of the start symbol.</p>
+<p>&nbsp;</p>
+<p>A start symbol could be any of the following.</p>
+<ul>
+	<li>
+	<p>the beginning of a program.</p>
+	</li>
+	<li>
+	<p>the entry point of a function, or subroutine.</p>
+	</li>
+	<li>
+	<p>the entry points of a device driver or other system routine.</p>
+	</li>
+	<li>
+	<p>the start of a batch file, and other computer directives.</p>
+	</li>
+</ul>
+<p>&nbsp;</p>
+<p>A function is something left over from the old programming school where a 
+single value is returned by a subroutine, other than that, it is exactly like a 
+subroutine. Most modern languages can and do return multiply values either by 
+passing an address (sometimes called 'by reference') to the variable to be 
+changed, or changing globally defined variables.</p>
+<p>&nbsp;</p>
+<p><a NAME="Vies_Symbols_4"><strong>Symbols screen</strong></a><strong>:</strong></p>
+<p>&nbsp;</p>
+<p>Text Areas</p>
+<p><font SIZE="3"><b>Symbol Names - </b><span STYLE="font-weight: normal">a drop 
+down button that has all of the symbol names in memory. </span></font></p>
+<p><strong>Status Text </strong>- messages while the program is working</p>
+<p STYLE="font-weight: normal"><strong>Symbol Name</strong> - the currently selected 
+symbol name.</p>
+<p STYLE="font-weight: normal"><strong>Data Type </strong>- all of the data 
+types of variables that can be selected.<strong>&nbsp;</strong></p>
+<p STYLE="font-weight: normal"><strong>Description </strong>- describes what 
+this data type does.</p>
+<p STYLE="font-weight: normal"><strong>Color Name </strong>- a list of all of 
+the color names.</p>
+<p STYLE="font-weight: normal"><strong>Input/Output </strong>- a list for the point definitions. 
+When input or output is selected, an arrow will be drawn at the 
+point.&nbsp; The arrow will show that a point is getting data in, or putting 
+data out.</p>
+<p STYLE="font-weight: normal"><strong>Width </strong>- pixel width of paths, 
+and size of points.<strong>&nbsp;</strong></p>
+<p STYLE="font-weight: normal"><strong>Bytes </strong>- how many bytes this data 
+type uses.</p>
+<p><strong>Syntax text </strong>- used to make the source code when exporting 
+from a visual symbol to source code text.</p>
+<p class="auto-style4">example &nbsp;{[(PointName.PathName)]} or {[(PointName.Variable)]}&nbsp;</p>
+<p><strong>Macro Code text </strong>- used to make the source code text. 
+The syntax is automatically made from the macro code.</p>
+<p>&nbsp;</p>
+<p>------------------------------------------------------------</p>
+<p>Symbol Graphics is what users see when they are writing, checking, or 
+revising symbol details. It is the only thing that programmers 
+need to use to write programs, just like they only need to use the programming 
+language for most of their text based written programs.&nbsp; A compiler is 
+currently still required to compile the source code created by FlowChart.</p>
+<p>&nbsp;</p>
+<p>The graphics is made up of only two items:</p>
+<ul>
+	<li>
+	<p>simple lines that show on the screen to tell what the symbol is. It can 
+	be anything from a simple box to show a general process, a diamond to show 
+	IF conditions, a disk to show where files are used, and so on. The lines can 
+	have colors to help show what this function does.&nbsp; The same symbol can 
+	be used with different colored lines for slight variations in the symbol 
+	usage.</p>
+	</li>
+</ul>
+<p><br />
+<br />
+</p>
+<p>points of where paths can be connected to this symbol. The points show, 
+directions arrows , input, output or both. It will also have a data type that is 
+defined by a color.</p>
+<p>&nbsp;</p>
+<p>A point can also have the option of displaying:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<ul>
+	<li>
+	<p>symbol macro text</p>
+	</li>
+	<li>
+	<p>micro text as an example of the text for a symbol.</p>
+	</li>
+</ul>
+<ul>
+	<li>
+	<p>syntax text where the variable name replaces the name of the point.&nbsp; 
+	For example, the simple computer language code could look like: A = A + B</p>
+	</li>
+</ul>
+<p>This would be in the symbol syntax text as:</p>
+<p>{[(PointA.pathname))]}} = {[(PointA.pathname)]} + {[(PointB.pathname)]}</p>
+<p>Where the name of the path connected to PointA is 'A' and the name of the 
+path connected to PointB is 'B'.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>The names of the paths connect the symbols together. This is the path on 
+which the data and logic move.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Now that the syntax is 
+encoded, the graphics symbol is&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; used by the 
+programmer in a FlowChart.&nbsp; The syntax text for the variables will be 
+replaced with the name of the path that connects to the point of the symbol that 
+is used.</p>
+<ul>
+	<li>
+	<p>The original file name of the symbol is kept.</p>
+	</li>
+</ul>
+<ul>
+	<li>
+	<p>An Opcode is for symbols that will (eventually) create the object files 
+	and programs.</p>
+	</li>
+	<li>
+	<p>The 'stroke'&nbsp; defines the mouse movements which selects a specific 
+	symbol.</p>
+	</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a NAME="Items_on_the_screen.1"></a><a NAME="Items_on_the_screen."></a>
+<span class="auto-style6">Chapter 5&nbsp;&nbsp; Objects on the screen.&nbsp;&nbsp;</span></p>
+<p>&nbsp;</p>
+<p><a NAME="Objects_FlowChart"></a>FlowChart graphics screen.</p>
+<p>
+<img ALIGN="BOTTOM" BORDER="0" HEIGHT="38" NAME="graphics3" SRC="Screen%20Menu%20FlowChart.jpg" WIDTH="75" /></p>
+<p>This screen has three kinds of objects: </p>
+<ul>
+	<li>
+	<p>&nbsp; paths which are the lines between symbols. </p>
+	</li>
+	<li>
+	<p>&nbsp; symbols, which are from the symbols library.</p>
+	</li>
+	<li>
+	<p>&nbsp; constants, are the starting value of the paths.</p>
+	</li>
+</ul>
+<p>&nbsp;</p>
+<p><a NAME="Objects_Symbol"></a><font SIZE="4">Symbol screen.</font></p>
+<p>This screen has graphic and text objects.</p>
+<p>&nbsp;&nbsp;&nbsp; The two kinds of graphic objects are:</p>
+<ul>
+	<li>
+	<p>&nbsp;&nbsp; Points which are small circles.</p>
+	</li>
+	<li>
+	<p>&nbsp; Lines which show the symbol shape&nbsp;</p>
+	</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp; The text objects are:</p>
+<ul>
+	<li>
+	<p>&nbsp;&nbsp; the name of the symbol.</p>
+	</li>
+	<li>
+	<p>&nbsp; the names of the points.</p>
+	</li>
+	<li>
+	<p>&nbsp; the names of the colors of the lines.</p>
+	</li>
+	<li>
+	<p>&nbsp; the file name of where this symbol is stored.</p>
+	</li>
+	<li>
+	<p>&nbsp;&nbsp; the stroke which is a string of letters to show the 
+	direction of mouse movement to select this symbol. (Not yet implemented)</p>
+	</li>
+	<li>
+	<p>&nbsp;&nbsp; the opcode is the machine binary code to create a program 
+	directly, and not have a compiler. (Not yet implemented)</p>
+	</li>
+	<li>
+	<p>&nbsp;&nbsp; the version/author should contain a version in the form of 
+	numbers followed by a period (except the last number)&nbsp; It is assumed 
+	that the version is in the form 'Major.Minor.Sub.1.Sub2.Build'.&nbsp;&nbsp;&nbsp; 
+	After a space (or comma) should be the information about the creator of this 
+	symbol. </p>
+	</li>
+	<li>
+	<p>&nbsp;&nbsp;&nbsp; the notes are ignored, but are useful to tell what 
+	this symbol is suppose to do.</p>
+	</li>
+	<li>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp; the macro text is a source code example.&nbsp; 
+	If you enter it, then FlowChart will create the syntax that understands its 
+	use.</p>
+	</li>
+	<li>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp; the syntax is what is used to create the output 
+	source code.&nbsp; It is made up of keywords and fixed replacement strings.&nbsp; 
+	(See list below)</p>
+	</li>
+	<li>
+	<p>&nbsp;&nbsp;&nbsp; the description is ignored.</p>
+	</li>
+</ul>
+<p>&nbsp;</p>
+<p><a NAME="Replacement_string">Replacement String Properties</a></p>
+<p>&nbsp;</p>
+<p>As of this writing you can replace inside of the syntax text :</p>
+<p>&nbsp;{[(SymbolName.index)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+The index is just the array pointer, not useful<br />
+{[(SymbolName.x)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+This is where the Symbol is located.<br />
+{[(SymbolName.y)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+"<br />
+{[(SymbolName.Rotation)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+This is how the symbol is rotated, flipped, or flopped.<br />
+{[(SymbolName.DataType)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+This is the name of the datatype (meaningless, only paths and points have 
+datatype)<br />
+{[(SymbolName.OpCode)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+This is machine code the format will be either Hex or the computer address </p>
+<p>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+(of a path no intension of using a jump addres at this time.<br />
+{[(SymbolName.notes)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+this prints out notes<br />
+{[(SymbolName.FileName)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+replaces with the filename in the symbol<br />
+{[(SymbolName.Author)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+replaces with the version / author<br />
+{[(SymbolName.Version)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+replaces with the version / author<br />
+{[(SymbolName.Stroke)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+The letter string that defines this symbol.<br />
+{[(SymbolName.xa)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+rotated X<br />
+{[(SymbolName.ya)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+rotated Y<br />
+{[(SymbolName.code)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+macro source code text (no replacements)<br />
+{[(PointName.name)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+name of this point on this symbol<br />
+{[(PointName.index)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the index of this point in the graphics table<br />
+{[(PointName.x)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the X of the point<br />
+{[(PointName.y)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the Y of the point<br />
+{[(PointName.IO)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Input, output, both etc.&nbsp; <br />
+{[(PointName.Rotation)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the rotation of the symbol (meaning less, cause the symbol is rotated, which 
+rotates the point<br />
+{[(PointName.Datatype)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+The datatype of this point<br />
+{[(PointName.PathName)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the name of the path that is connected to this point<br />
+{[(PointName.Variable)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+same as the path name<br />
+{[(PointName.PathX)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+The X of the path that is connect to the X of this point<br />
+{[(PointName.pathY)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+NOTE: .path? and .xa and .x shoule all match.&nbsp; Other wise the path is not 
+ending at this point<br />
+{[(PointName.Distance)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the distance between the point and the path<br />
+{[(PointName.DataTypeName)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the name of the datatype of this point<br />
+{[(PointName.DataTypeDescribtion)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+describtion of the data type of this datatypename connecter to this point<br />
+{[(PointName.Bytes)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+number of bytes that this data type.&nbsp; (This is for opcode, not yet 
+implimented.<br />
+{[(PointName.DataTypeColor)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the color of the datatype.<br />
+{[(PointName.Width)]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the width of the path for this datatype (and size of the circle for points</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a NAME="File_Importing_"></a><span class="auto-style6">Chapter 6 Import/Export file formats:</span></p>
+<p>These are the FLowChart keywords to define the information that is being 
+imported and exported.</p>
+<p>&nbsp;</p>
+<p><strong>/Ignore=</strong>&nbsp; anything that starts with this will be 
+ignored by FlowChart.</p>
+<p>&nbsp;</p>
+<p><strong>/ComputerLanguageDialect=</strong> this is the name of the dialect&nbsp; 
+such as VisualBasic, MicroSoftVisual C++, gnnCC, etc.</p>
+<p><a NAME="Computer LanguageGotoNextLine"></a></p>
+<p><strong>
+/ComputerLanguageGoToNextLine=</strong> this is the keyword to goto some 
+address/label</p>
+<p>&nbsp;</p>
+<p><strong>/ComputerLanguageCameFromLastLine=</strong> this is the label that 
+the above Goto uses.</p>
+<p>&nbsp;</p>
+<p><strong>/ComputerLanguageProcess= </strong>this gives the name of the 
+preprocessor program which passes sourced code back and forth to change it's 
+syntax.&nbsp; (See chapter on Preprocessor&nbsp; / Postprocessor for more 
+details.)</p>
+<p><a NAME="Language"></a></p>
+<p><strong>/Language = </strong>the name of the language 
+class&nbsp; ie: C, Basic, Cobol, Fortran, Lisp, etc.</p>
+<p><a NAME="ComputerLanguageCase"></a></p>
+<p>/<strong>ComputerLanguageCase = </strong>
+{yes, no} (not implemented, everything is considered as one case.)</p>
+<p>&nbsp;</p>
+<p><strong>/ComputerLanguageComment = </strong>this is a string of characters 
+that define the start of a comment, ie: rem,&nbsp;&nbsp; ',&nbsp;&nbsp; /*,&nbsp; 
+//&nbsp; , etc. </p>
+<p>&nbsp;</p>
+<p><strong>/ComputerLanguageExtension = </strong>this is the extension of the 
+file name of the source code&nbsp; ie:bas,&nbsp; C,&nbsp; Ada, ASM,&nbsp; etc.</p>
+<p>&nbsp;</p>
+<p><strong>/ComputerLanguageMultiLine =&nbsp; </strong>will replace the 
+character with a carriage return because FlowChart currently only deals with one 
+line at a time.</p>
+<p>&nbsp;</p>
+<p><strong>/ComputerLanguageVariableNameCharacters = </strong>characters that 
+are allowed besides letters and digits.&nbsp; It is assumed that variables names 
+start with a letter, followed by letters and numbers.&nbsp; If the computer 
+language allows special characters in a name then they need to be listed.&nbsp; 
+ie: period, underscore, $, %, and other special characters that define the data 
+type of this variable. </p>
+<p><a NAME="Options"></a></p>
+<p><strong>/Options= </strong>&nbsp;turns an option or message 
+number on or off by setting it to zero or one.</p>
+<p><a NAME="Set"></a></p>
+<p><strong>/Set=</strong></p>
+<p>&nbsp;</p>
+<p>
+--------------------------------------------------------------------------------</p>
+<p>&nbsp;</p>
+<p ALIGN="CENTER" STYLE="text-indent: -0.4in; widows: 2; orphans: 2">
+<a NAME="Syntax_Summary_for_Symbol_Library0"></a>
+<font COLOR="#000000" FACE="Times New Roman"><span STYLE="font-style: normal">
+<u><span STYLE="font-weight: normal" class="auto-style8">
+<a name="Syntax_Summary_for_FlowChart:">Syntax Summary for FlowChart:</a></span></u></span></font></p>
+<p>&nbsp;</p>
+<p><a NAME="Path"></a>/Path=x1, y1, x2, y2, "Data Type Name", Path Name</p>
+<p class="auto-style4">code, x1,y1,x2,y2, Rotation name, Option Name, Data type Name {[(actual line 
+of source code ?)]}</p>
+<p class="auto-style9">code is /path=</p>
+<p class="auto-style9">a path from x1,y1 to x2,y2</p>
+<p class="auto-style9">The data type name must be in the support table data 
+type.</p>
+<p class="auto-style9">The name of this path is also the variable in the source 
+code.</p>
+<p class="auto-style10">This line segments from the points in one symbol to the points in another 
+symbol inside a FlowChart. The Data Type matches the Data Type from the Point in 
+the symbol to make sure that the user has matches them correctly.</p>
+<p>&nbsp;</p>
+<p><a NAME="Use"></a>/Use=x1, y1, Rotation, xx, "Name of the symbol called"</p>
+<p class="auto-style4">code, x1, y1, rotation name, "name of the symbol"</p>
+<p class="auto-style4">code = /use=</p>
+<p class="auto-style4">x1,y1 is the location of where the symbol is placed.</p>
+<p class="auto-style4">xx is a selected option for this usage of the symbol here 
+only. (not implemented yet)</p>
+<p class="auto-style4">rotation comes from only of the selects from the rotation 
+drop down on the symbol screen.&nbsp; (Yes, the rotation is on the symbol 
+screen, and it has to be selected before placing a symbol on the flowchart, a 
+minor bug that is going to be change one of these days.)</p>
+<p class="auto-style4">The name of the symbol.&nbsp; This name is looked up in 
+the Named/Symbol table(s)</p>
+<p class="auto-style7">In a FlowChart this is the symbol that is displayed for the user to connect 
+his lines to.</p>
+<p class="auto-style7">The rotations with flip or flop gives a mirror image of the symbol. Flip 
+gives a flip mirror image sideways, then a flop mirror image up and down, so 
+flipflop will first give a mirror image sideways and a flop will give a mirror 
+image of that up and down, turning it back forward. Which is the same as 
+Rotate180.)</p>
+<p>&nbsp;</p>
+<p>/Constant=x1, y1, "Constant Value"&nbsp;</p>
+<p class="auto-style9">code, x, y, "constant text at this point"</p>
+<p class="auto-style9">code = /constant=</p>
+<p class="auto-style9">The X,Y must be on the end or turn of a path.</p>
+<p class="auto-style9">The constant value is a string.&nbsp; The compiler will 
+convert that string into a number.&nbsp; If your compile requires quotes around 
+strings, they ou need to add that to the macro text, (and have it in the Syntax 
+text</p>
+<p>&nbsp;</p>
+<p><a NAME="Syntax_Summary_for_Symbol_Library"></a><u>Syntax Summary for Symbol:</u></p>
+<p>&nbsp;</p>
+<p>Syntax:</p>
+<p><a NAME="Name"></a>/Name="NAME", options</p>
+<p class="auto-style11">NAME is the name that is given to the symbol. This also 
+signals the end of 
+the last symbol and the start of the next. The name must be the same as the name 
+in the /use command&nbsp; Right nowe case is turned off</p>
+<p>&nbsp;</p>
+<p>/Language="Computer Language Class", "Dielect"</p>
+<p class="auto-style11">This is for which computer language that this symbol works on. You can allow 
+the symbol to have output in many different languages (one at a time).</p>
+<p>For example:</p>
+<p class="auto-style11">/Language=BASIC, FreeBasic</p>
+<p class="auto-style11">/Language=basic, Visual Basic</p>
+<p class="auto-style11">/Language=C, Visual C</p>
+<p class="auto-style11">/Language=C++</p>
+<p class="auto-style11">/Language=FORTRAN, Fortran 66</p>
+<p class="auto-style11">/Language=COBOL, IBM Micro COBOL</p>
+<p class="auto-style11">/Language=unknown languages, MyOwnPersonComputerLanguange </p>
+<p class="auto-style11">/Language=Lisp</p>
+<p>&nbsp;</p>
+<p>/MacroCodeText= Order, TEXT</p>
+<p class="auto-style11">This is the computer code that is generated for this symbol for the above 
+computer language. The reason that FlowChart works is how the Code is written 
+here. The code is just generalized code with the point names replaced with the 
+name of the path.&nbsp; And the properity replaces with what ever data that 
+point has.&nbsp; {[(PointName.properity)]} is replace and results is PathName, 
+where the point name is PointName and the properity is .Pathname.</p>
+<p class="auto-style11">Order used in some languages to separate one section from another 
+(Sort Order)</p>
+<p>for example:</p>
+<p class="auto-style11">/Program=main, {{[((SUM{{[((={{[((NUM1{{[((+{{[((NUM2{{[((;</p>
+<p class="auto-style11">/Point=50,0,-1,integer,"SUM"</p>
+<p class="auto-style11">/Point=-200,0,1,integer,"NUM1"</p>
+<p class="auto-style11">/Point=200,100,1,integer,"num2"</p>
+<p>When this FlowChart is assembled the result replaces what ever the user has 
+named the paths from one symbol to another with this name (If the user has not 
+named the paths, then the computer assigns a name to each to each set of 
+line/paths that are connected together.) So the results would look something 
+like this in the generated code file.</p>
+<p class="auto-style11">My Totals=Dept One+Shoes</p>
+<p>&nbsp;</p>
+<p>/Point=X, Y, input/output,Data Type, "Variable-name"</p>
+<p class="auto-style11">code, x1, y1, input/output, Data Type, "name of this Point"</p>
+<p class="auto-style11">code = /point</p>
+<p class="auto-style11">x1,y1 is the offset from the center of the symbol (1 to 
+500 with the center at 250, 250)</p>
+<p class="auto-style11">input, output, both and other options are in the 
+input/output drop down.&nbsp; This is to tell if the symbol is getting input to 
+wirk with, or input from logic from another symbol.&nbsp; The output logic goes 
+to another symbol.&nbsp; and the output of data can go to more than one symbol.&nbsp; 
+Altho FlowChart structure can handle multi processor's working on the same 
+program (same memory area) compilers and computers, in general, do not at this 
+time. (There are exceptions, but not many)</p>
+<p class="auto-style11">The data type support table is then used to get the 
+color, size, style, etc.</p>
+<p class="auto-style11">The name of this point is what is looked for to replace 
+with the name of the path connected to it. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>/Line=x1, y1, x2, y2, "Color Name"</p>
+<p class="auto-style11">code, x1,y1,x2,y2, "name color"</p>
+<p class="auto-style11">Code = /line=</p>
+<p class="auto-style11">x1, y1 is the start of the line, and x2, y2 is the end</p>
+<p class="auto-style11">The name of a color is looked up in the color support 
+table. </p>
+<p class="auto-style11">This just draws a line in side the symbol from x1,y1 to x2,y2 of what the 
+symbol displays, it has not other function. You have lines inside a symbol to 
+display only. You have paths inside a FlowChart to connect the /Points inside 
+one displayed symbol to another. </p>
+<p>&nbsp;</p>
+<p>/Color= Color Name, {[(Alpha, Red, Green, Blue)]}, 
+{[(Style)]},{[( Start)]}, {[(End)]}</p>
+<p class="auto-style11">code,"name of this color" </p>
+<p class="auto-style11">code = /color=</p>
+<p class="auto-style11">Color values for Alpha, Red, Green, Blue must be between 0 to 255 and they 
+are optional. Flowchart creates the standared Microsoft</p>
+<p class="auto-style11">the name of the color is currently restricted to the 
+color names defined from microsoft.&nbsp; (See list in the color support table.</p>
+<p class="auto-style11">{[( Alpha, Red, Green, Blue)]}&nbsp; These four numbers 
+(from 0 to 255) define what color this is.&nbsp; Currently it is not being used.&nbsp; 
+Future versions will add the ability to name and control your own colors.</p>
+<p class="auto-style11">{[(Style)]} is currently no implemented.&nbsp; It is how 
+the lines/paths appear, as solid (the current default),&nbsp; Valid styles are: Solid, Dash, Dot, Dashdot, DashDotDot</p>
+<p class="auto-style11">{[( Start)]}, {[(End)]}&nbsp; these two are for the ends 
+of paths and lines, they really are useless, but are here for other reasons.&nbsp; 
+Ignored.&nbsp; Valid for start and end are: AnchorMask, ArrorAnchor, DiamondAnchor, Flat, 
+NoAnchor, Round, RoundAnchor, Square, SquareAnchor, Triangle</p>
+<p class="auto-style11">&nbsp;</p>
+<p class="auto-style3">&nbsp;Color names (All 139 of 
+them) and will output them when you export. </p>
+<p>&nbsp;</p>
+<p>Syntax:</p>
+<p><a NAME="Order"></a>/Order= (order1,order2,(,order3,order4)...)</p>
+<p class="auto-style11">The order is where the source code is written out. For example, Globals 
+should be in order1 from above, and source code should be in order4, with all of 
+the definations of the variables in order3 group for the subroutine order4. If 
+any named order is not in this list then it will be added to&nbsp; the end. Order1... 
+is just an example, andy names can be used (like IncludeSection, GlobalSection, 
+MainSection, DefineSection, DeclareSections)</p>
+<p>example:</p>
+<p>/Order=(IncludeSection, GlobalSection), MainSection, (VariableSection, 
+CodeSection, FinishSection, ErrorTrappingSection ), OtherSections.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span class="auto-style6">Chapter 7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Support Tables</span></p>
+<p>&nbsp;</p>
+<p>The program does not currently allow you to make changes to these external 
+tables, they must be edited by hand with</p>
+<p>&nbsp;a program like notepad. They are 7 bit ASCII files (UTE-8), DO NOT CHANGE TO DOCUMENT 
+FILE STRUCTURE.&nbsp; unknown results if you use wide character (ie"UTE-16).</p>
+<p>&nbsp;</p>
+<p>Some of the support tables that can be changed. </p>
+<p><span class="auto-style13">Color Table:</span> This contains the colors of the 
+	lines and paths and text. They all use the same color support table names as 
+	defined by Microsoft. This table contains the names of the colors, It also 
+	contains optional things as the style of the line (Solid, Dot, Dash, DotDash) and the red/green/blue for non standard colors. All of the colors 
+	are available . They are saved each time that you save your FlowChart.</p>
+<p><a NAME="Datatype_table"></a><span class="auto-style13">Datatype table</span>: This contains the name of 
+	the data type. Such as integer, real, double, byte. It should only contain 
+	the data types for the language that you are programming in. Such as C, 
+	Basic, FORTRAN, COBOL,. It can also have data types for the operating system 
+	that you are using (such as the datatype to interface with Windows APIs). 
+	The data type also contains the color, width, and other future items.</p>
+<p><a NAME="Keyword_table"></a><span class="auto-style13">Keyword table:</span> They are then made for each 
+	computer language. That is how the program tells what to do with a line of 
+	code.</p>
+<p><a NAME="Operator_table"></a><span class="auto-style13">Operator table:</span> They are special characters 
+	such as + - = , ( ) {[( )]} ^ &amp; * and keywords such as 'mod' It is the 
+	grammar of each line of source code. With keywords they tell how the line of 
+	code is to be matched to the syntax operator grammer of each symbol.</p>
+<p><a NAME="Function_name_table"></a><span class="auto-style13">Function name table</span>, to help the 
+	flowchart program decide which symbol to match input lines of code to.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Support tables that can not currently be changed (future)</p>
+<p>&nbsp;</p>
+<p>Direction Table is the 16 directions between two points.&nbsp; 16 is up, 8 is 
+down, 4 is to right, 9 is to left.&nbsp; 2 is at 45 up-right, 6 is down-right, 
+10 is down left, and up left. All even dumbered directions is on 90 or 45 
+degrees only, the old numbers is everthing between the 90 and 45 degrees.</p>
+<p>&nbsp;</p>
+<p>14&nbsp;&nbsp;&nbsp; 15&nbsp;&nbsp;&nbsp; 16&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp; 
+2</p>
+<p>13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+3</p>
+<p>12 -------- |--------- 4</p>
+<p>11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+5</p>
+<p>10&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp;&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp; 
+7&nbsp;&nbsp;&nbsp;&nbsp; 6</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Rotation Table :</p>
+<p class="auto-style7">Default =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0, 1 , 0 , 0 , 1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^. Flips to ^. Stays the same 
+.<br />
+Flip =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1, -1, 0, 0, 1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^ .Flips To 
+^. sideways flip.<br />
+Flop =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2, 1, 0, 0, -1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^ .Flips To v. top side flips down.<br />
+Rotate90 =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3, 0, 1, -1, 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^ .Flips To &gt; rotate 90 degrees period On bottom<br />
+Rotate180 =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4, -1, 0, 0, -1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^ .Flips To .v rotate 180")<br />
+Rotate270 =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5, 0, -1, 1, 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^ .Flips To &lt;rotate 270 ")<br />
+&nbsp;FlipRotate90 =&nbsp;&nbsp;&nbsp;&nbsp; 6, 0, -1, 1, 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^ .Flips To &gt; period On top flip Then 
+rotate 90 ")<br />
+FlipRotate180 =&nbsp;&nbsp;&nbsp;&nbsp; 7, 1, 0, 0, -1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^ .Flips To v. flip Then rotate 180 (mirror 
+image Of) ")<br />
+FlipRotate270 =&nbsp;&nbsp;&nbsp;&nbsp; 8, 0 , -1 , -1 , 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^. Flips To &lt;Period On bottom ")<br />
+&nbsp;FlopRotate90 =&nbsp;&nbsp;&nbsp;&nbsp; 9, 0 , -1 , -1 , 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^. Flips To &gt; period On bottom Same As 
+")<br />
+FlopRotate180 =&nbsp;&nbsp;&nbsp;&nbsp; 10, -1 , 0 , 0 , 1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^. Flips To .^ same As flip rotate180 ")<br />
+FlopRotate270 =&nbsp;&nbsp;&nbsp;&nbsp; 11, 0 , 1 , 1 , 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^. Flips To ^. period On top")<br />
+FlipFlop =&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12, 0 , -1 , -1 , 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^. Flips To ^. same As rotate180 ")<br />
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a NAME="Data_Type_Table"><strong></strong></a><strong>
+<span class="auto-style13">Data Type Table </span></strong> </p>
+<p class="auto-style11">This table contains the color/types of data that line paths in FlowChart, and 
+the color of the connection points in symbols that they must connect to. It also 
+contains the color of lines that make up symbols.</p>
+<p class="auto-style11">The following description of the file layout also shows how the fields are 
+used:</p>
+<p class="auto-style11">The following are imported via a flowchart, or symbol import file.&nbsp; </p>
+<p class="auto-style11">&nbsp;</p>
+<p class="auto-style11">Preceeded by :/Color (you must define a color before using it in a /datatype</p>
+<p>&nbsp;</p>
+<p>/Datatype=name, Description, Bytes, Color Name, Width/Radius</p>
+<p class="auto-style11">Name is unique of this data type (or line color name as used in symbols).</p>
+<p class="auto-style11">Description is what this data type is for. </p>
+<p class="auto-style12"><strong><em>It can not have comma's in any field because 
+they areused as as field delimiters.</em></strong></p>
+<p class="auto-style11">This is the size of the number of bytes of this data variable (use 0 for 
+Logic, and -1 for strings)</p>
+<p class="auto-style11">Name of the color in the color support table.</p>
+<p class="auto-style11">Width/Radius This is the width of paths (lines are 
+always one wide)</p>
+<p>
+<br />
+</p>
+<p><strong><span class="auto-style13">Color Support Table:</span></strong><font size="4">.</font></p>
+<ul>
+	<li>
+	<p><a NAME="Color_table"></a></p>
+	</li>
+</ul>
+<p><a NAME="Import_Syntax"></a><font SIZE="6">Summary of the Import Syntax 
+Statements allowed.</font></p>
+<p>If you must make changes to the import/export file. The latest formats are 
+listed there.</p>
+<p>(*1) marks the input statements that allow multiply lines</p>
+<p>&nbsp;</p>
+<p>/ComputerLanguageCase=no</p>
+<p>/ComputerLanguageMultiline=_</p>
+<p>/ComputerLanguageComment=rem</p>
+<p>/ComputerLanguageExtention=.VB</p>
+<p>/ComputerLanguageVariableNameCharacters=$%</p>
+<p>/ComputerLanguageDialect_=VisualBasic</p>
+<p>/ComputerLanguageGoTonextLine={{[((ComputerLanguageGoTonextLine))]}}</p>
+<p>/ComputerLanguageCameGromLastLine={{[((ComputerLanguageCameGromLastLine))]}}</p>
+<p>/ComputerLanguageProcess=C:\ProgramFiles\FCVisualBasic.exe</p>
+<p>/Color= Color Name, Alpha, Red, Green, Blue, Style, start, end</p>
+<p>/Datatype= Name, Description, Number of Bytes, Display Width/Radius, Style</p>
+<p>/Name= Name</p>
+<p>/Language= Computer Language</p>
+<p>/Program= Sort, Code of the Computer Language with {[(Replacements)]}.(*1)</p>
+<p>/Point= X,Y, {Input, Output, Both,OptionalInput, OptionalOutput, or 
+OptionalBoth}. The Data Type Name, Name of Points in symbol. (*1)</p>
+<p>/Line= X1, Y1, X2, Y2, Color Name.(*1)</p>
+<p>/Filename= Device:\Path\File Name. Extension of where to save only this 
+symbol (Optional)</p>
+<p>/Notes= Notes. (*1)</p>
+<p>/Path= X1, Y1, X2, Y2, Datatype, Name of The Path</p>
+<p>/Use= X, Y, {'Flip', Rotate90, Rotate180, Rotate270. . . }, Symbol Name</p>
+<p>/Constant= X, Y, Constant Value</p>
+<p>/Syntax= Language Statement Syntax</p>
+<p>/Opcode= Hex Values (&amp;Tables) (Not used yet)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>The order of the file must be </p>
+<p>/ComputerLanguageDialect...</p>
+<p>/Color before it is used, then (If missing the program will use Windows 
+Default colors</p>
+<p>/Datatype</p>
+<p>/Name </p>
+<p>/Point</p>
+<p>/Line</p>
+<p>/Use, /Path, or /Constant.</p>
+<p STYLE="page-break-before: always"><a NAME="Standard:"></a>Standard:</p>
+<p>&nbsp;</p>
+<p>This should be the first standard of the language.</p>
+<p>&nbsp;</p>
+<p><em>&nbsp;Software Schematic should have three parts, a flowchart, a symbol, 
+support tables.</em></p>
+<p>&nbsp;</p>
+<p><strong>.FlowChart</strong></p>
+<p>The flowchart has three parts. </p>
+<p>Displaying complete symbols on the screen/page.&nbsp; </p>
+<p>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+FlowChart symbol properities are the X,Y location, Rotation,</p>
+<p>Paths going between points on the symbols.&nbsp; </p>
+<p>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Path properities are an (X,Y) to (X,Y), a path name, a logic/data type.</p>
+<p>Optionally 'constant' which are what the path value starts with. Optionally 
+but ignored are errors of the program, such as:</p>
+<ul>
+	<li>
+	<p>&nbsp; points on a symbol not being connected.</p>
+	</li>
+	<li>
+	<p>&nbsp; logic paths that go to two symbol inputs, assume for now single 
+	liner processers, but the language is not restricted by this</p>
+	</li>
+	<li>
+	<p>&nbsp; paths with no source, output from at least one symbol.</p>
+	</li>
+	<li>
+	<p>&nbsp; two paths connect with different names.</p>
+	</li>
+</ul>
+<p>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Constant properities are (X&lt;Y), The starting value (data type and name comes 
+from the path it is connected to.</p>
+<p>optionally 'error' messages.&nbsp; When the program needs to display an error 
+at a location where the error occures. Or to point the user to where something 
+needs to be changed.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+	<p><strong>Symbol&nbsp; </strong></p>
+	<p>The symbol has a number of parts.&nbsp; It is defined inside a retangle 
+	of from -250 to 250 in the X and Y.&nbsp; This is an artificial limit and 
+	might go away, if there are to many people that need/want it larger.)</p>
+	<p>Symbol properities:</p>
+	<p>&nbsp;</p>
+	<p>Name:&nbsp; Each symbol is refered to by name.&nbsp;&nbsp; You can use 
+	almost any name that could be used as a variable.&nbsp; It begins and ends 
+	with 'white space', white can be things like a space, tab, return, and so 
+	on.&nbsp; The&nbsp; name of the symbol.&nbsp; This is so that the flowchart 
+	displays this symbol by name,</p>
+	<p>&nbsp;</p>
+	<p>Points: Each symbol has to have the points defined.&nbsp; </p>
+	<p>&nbsp;</p>
+	<p>Point properities:</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	(X,Y)</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	Name of the point (This is used to create the text for each symbol. (See 
+	Macro Text)</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	The Logic/Data Type of this point.</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	Lines:&nbsp; Each Symbol must have some graphics that show what this symbol 
+	is.&nbsp; Usually, a flattened oval is used for the start, and also an end.&nbsp; 
+	An end is somtimes just a circle. diamonds&nbsp; are usually used for 
+	testing to determin directions of logic branches.&nbsp; That would include 
+	things like IF, CASE, Computer Goto, WHILE, and so on.</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	Optionally Icons/Pictures.&nbsp; There should be Icons and pictures 
+	available also.&nbsp; </p>
+	<p>&nbsp;</p>
+	<p><strong>Support Tables</strong></p>
+	<li>
+	<p>Color Table: The color table is used to be able to move from one system 
+	to another.&nbsp; Currently its format is based on Windows 10 Color Names.&nbsp; 
+	But it also has the Red/Green/Blue for other systems to create thier own 
+	Color names.&nbsp; (See The details in import/export section)</p>
+	<ul>
+		<li>
+		<p>DataType Table:&nbsp;&nbsp; The data type table has information about 
+		a type of data this includes:</p>
+		</li>
+	</ul>
+	</li>
+</ul>
+<p>They 'should' have color and/or distinction to tell the difference data types 
+they represent.</p>
+<p>Second is the symbols, which has a number of items.</p>
+<p>The symbol must have a unique name.</p>
+<p>A symbol must have the 'program macro code', which is just the computer 
+language code with variables replaced with {{[((names of the point{{[((.</p>
+<p>My Exceptions to my own standard:</p>
+<p>The File name that the symbol is contained in.</p>
+<p>The Computer Language Of this symbol.</p>
+<p>Notes.</p>
+<p>Version.</p>
+<p>Author.</p>
+<p>Hex code for the Machine. (Only used in Assemble Language for now.)</p>
+<p>An internal text representation of the mouse movement to identify this 
+symbol.</p>
+<p>A symbol should have a graphics part represented by points. They should have 
+lines or graphics to show what this symbol does (ie: decision branch (go to, go 
+subroutine), process (subroutine, function calls), loops (do while, for next, do 
+until) and so on). </p>
+<p>The points has a number of significant items.</p>
+<p>Points must have associated with them the logic or data types (i.e.: Integer, 
+String, Floating Point) Depending on the language.</p>
+<p>Points 'should' have a representation of the symbol using (input) or 
+returning (output)</p>
+<p>The lines might have colors and/or distinction but nothing else of 
+importance.</p>
+<p><br />
+<br />
+</p>
+<p>Third is support tables.</p>
+<p>A support table of color names is helpful.</p>
+<p>Showing at least the colors available, or select-able from a pallet of colors</p>
+<p>A support table of data types is helpful</p>
+<p>Showing the name of the data type (i.e.: byte, integer, Floating Point, or 
+language dependent for C, C++ in Windows and the new C Standards).</p>
+<p>&nbsp;</p>
+<p>{[(My Exceptions)]}</p>
+<p>Color Table:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alpha, Red, Green, Blue of 
+the color for those systems that can use it.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The types of start and end 
+points styles that can be used.</p>
+<p>The line styles that can be used. (Solid, Dot, Dash etc.)</p>
+<p>Data Type Table:</p>
+<p>Has a description of the data type.</p>
+<p>Has a name of a color for this data type.</p>
+<p>Has the size (in bytes) of this data type.</p>
+<p>Has the width of the line, with a minimum of 3 for this data type.</p>
+<p>&nbsp;</p>
+<p STYLE="page-break-before: always">Over-writable Internal Support Tables:</p>
+<ol>
+	<li>
+	<p>Direction Table: (A flip or a flop will reverse. An symbol can appear 8 
+	ways)</p>
+	<p>Number Named TopRight ? Top/Bottom Right/Left</p>
+	<p>&nbsp;Default</p>
+	<p>&nbsp;Rotate90</p>
+	<p>&nbsp;Rotate180, FlipFlop </p>
+	<p>&nbsp;Rotate270&nbsp;&nbsp;&nbsp; </p>
+	<p>&nbsp;Flip</p>
+	<p>&nbsp;FlopRotate180</p>
+	<p>&nbsp;FlipRotate90</p>
+	<p>&nbsp;FlopRotate270</p>
+	<p>&nbsp;&nbsp;FlipRotate180 </p>
+	<p>&nbsp;Flop</p>
+	<p>FlipRotate270 </p>
+	<p>FlopRotate90 </p>
+	<p>FlopRotate90, </p>
+	</li>
+	<li>
+	<p>Line Styles (Windows Dependant):</p>
+	<p>SOLID, dash, dot, dashdot, dashdotdot</p>
+	</li>
+	<li>
+	<p>Line start/finish (Windows Dependant):</p>
+	<p>AnchorMask, ArrowAnchor, DiamondAnchor, flat, NoAnchor, Round, 
+	RoundAnchor, Square, SquareAnchor, Triangle</p>
+	</li>
+	<li>
+	<p>Computer Languages: (Note that this will change to be an external table 
+	also later)</p>
+	<p>Assembly , Bash , Basic , C , C# , C++ , COBOL , Clojure , Dart , Dos , 
+	Elixir , Forth , Fortran , Generic , Go , PowerShell , Java , JavaScript , 
+	Kotlin , Lisp , ObjectiveC , Pascal , Perl , PHP , Python , R , Ruby , Rust 
+	, Scala , SQL , Swift , TypeScript , VBA , WebAssembly </p>
+	<ol>
+		<li>
+		<p>After selecting the language you also have to either load the 
+		keywords, or start up the language dependant program to preprocess the 
+		inputs.&nbsp; (See FClanguage)</p>
+		</li>
+	</ol>
+	</li>
+	<li>
+	<p>Default Windows Color Names (Anything will display black)</p>
+	<p>(Windows 10 dependant colors) AliceBlue, AntiqueWhite, aqua, aquamarine, 
+	Azure, beige, bisque, Black, BlanchedAlmond, Blue, BlueViolet, Brown, 
+	BurlyWood, CadetBlue, Chartreuse, Chocolate, Coral, CornflowerBlue, 
+	Cornsilk, Crimson, Cyan, DarkBlue, DarkCyan, DarkGoldenrod, DarkGray, 
+	DarkGreen, DarkKhaki, DarkMagenta, DarkOliveGreen, DarkOrange, DarkOrchid, 
+	DarkRed, DarkSalmon, DarkSeaGreen, DarkSlateBlue, DarkSlateGray, 
+	DarkTurquoise, DarkViolet, DataTypeError, DeepPink, DeepSkyBlue, DimGray, 
+	DodgerBlue, Firebrick, FloralWhite, ForestGreen, Fuchsia, Gainsboro, 
+	GhostWhite, Gold, Goldenrod, Gray, Green, GreenYellow, Honeydew, HotPink, 
+	IndianRed, Indigo, Ivory, Khaki, Lavender, LavenderBlush, LawnGreen, 
+	LemonChiffon, LightBlue, LightCoral, LightCyan, LightGoldenrodYellow, 
+	LightGray, LightGreen, LightPink, LightSalmon, LightSeaGreen, LightSkyBlue, 
+	LightSlateGray, LightSteelBlue, LightYellow, Lime, LimeGreen, Linen, Logic, 
+	Magenta, Maroon, MediumAquamarine, MediumBlue, MediumOrchid, MediumPurple, 
+	MediumSeaGreen, MediumSlateBlue, MediumSpringGreen, MediumTurquoise, 
+	MediumVioletRed, MidnightBlue, MintCream, MistyRose, Moccasin, NavajoWhite, 
+	Navy, OldLace, Olive, OliveDrab, Orange, OrangeRed, Orchid, PaleGoldenrod, 
+	PaleGreen, PaleTurquoise, PaleVioletRed, PapayaWhip, PeachPuff, Peru, Pink, 
+	Plum, PowderBlue, Purple, Red, RosyBrown, RoyalBlue, SaddleBrown, Salmon, 
+	SandyBrown, SeaGreen, SeaShell, Sienna, Silver, SkyBlue, SlateBlue, 
+	SlateGray, Snow, SpringGreen, SteelBlue, Tan, Teal, Thistle, Tomato, 
+	Transparent, Turquoise, Violet, Wheat, White, WhiteSmoke, Yellow, 
+	YellowGreen </p>
+	</li>
+	<li>
+	<p>Default DataTypes (expanded by external table from flowcharts)</p>
+	<p>Bit, Byte, errored, erase, Floating, Int16, Int32, Int64, INT8, Integer, 
+	logic, Long, Word</p>
+	<ol>
+		<li>
+		<p>Data Type properities: </p>
+		<p><a NAME="Datatype0"></a>/Datatype=name, Description, Bytes, Color 
+		Name, Width/Radius, Style, Reserved</p>
+		<ol>
+			<li>
+			<p>The name of this symbol (loading another with the same name will 
+			just sometimes add, and sometimes replace the existing system 
+			properities)</p>
+			</li>
+			<li>
+			<p>A Description. Do not use comma's in the description because they 
+			are required in all imports instead of white space </p>
+			</li>
+			<li>
+			<p>The number of bytes that this data type requires.</p>
+			</li>
+			<li>
+			<p>The name of the color that this data type paths and points will 
+			be display with</p>
+			</li>
+			<li>
+			<p>The width of Paths and the size of symbol points.</p>
+			</li>
+			<li>
+			<p>The style (Solid, dot, dot dash etc Windows 10 dependant)</p>
+			</li>
+			<li>
+			<p>The line start and end.&nbsp; Arrow, flat, etc.&nbsp; (Windows 10 
+			Dependant)</p>
+			</li>
+		</ol>
+		</li>
+	</ol>
+	</li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a NAME="Glossary"></a>Glossary </p>
+<p STYLE="page-break-before: auto; page-break-after: auto">FlowChart : Is a 
+graphical representation of the logic and data paths of a program connecting symbols together 
+to show the logic steps of a computer process.</p>
+<p STYLE="page-break-before: auto; page-break-after: auto">FlowChart graphics 
+table : This refers to 'records' that hold the information about each located 
+symbol, path segments, and constants.</p>
+<p>Symbol : Is a graphical representation of a basic unit inside a FlowChart 
+made up of lines and points. It contains lines, points, and other information to 
+make the FlowChart into a program.</p>
+<p>located symbol : This is a /use record in the FlowChart graphics table</p>
+<p>Line : Is a graphical line in a symbol. It has color, but no width.</p>
+<p>path segment : </p>
+<p>Path : Is a graphical line in a FlowChart that represents the logic, or data 
+going from one symbol to another. It has a color and width representing the type 
+of data that that is moving in the program.</p>
+<p>Point : Also called a connection point is in a symbol that is where the Paths 
+from different symbols connect. It show where a path goes into, and comes out of 
+a symbol. It has color and width for this type of data for this connection.</p>
+<p>Connection Point: Is another name for Point.</p>
+<p>Color : This is a name that Windows has a set of colors for. (Currently new 
+color pens are not allowed, only the existing 139 color names.)</p>
+<p>Data Type : This refers to the type of data that they symbol point is looking 
+for. Some computer languages get very picky about this (Like C++), other 
+computer languages could not care less (like BASIC).</p>
+<p>DeCompiled : Thiss term refers to the process of converting a source code 
+text file into the graphical FlowChart Computer Language.&nbsp; </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; &nbsp;</p>
+<p>Quick Start</p>
+<p>&nbsp;</p>
+<p>For starting quickly, first start the FlowChart ComputerLanguage Program.</p>
+<p>&nbsp;</p>
+<p>This can be done in a number of ways. In&nbsp; Microsoft Windows, press the 
+right mouse button over the windows start icon. This will let you see all 
+programs that are installed. . Then select FlowCHart.&nbsp; You can press the 
+Windows key.&nbsp; If you need more help on how to install or start a computer 
+program refer to your owners manual, or the Internet.</p>
+<p>&nbsp;</p>
+<p>After the FlowChart program is started, there will be a splash screen 
+displayed over the flowchart screen. They will both disappear and the option 
+screen will display, with only one button enabled.</p>
+<p>&nbsp;</p>
+<p>The button will allow you to select the computer language.&nbsp; The list 
+will have generic computer languages, and some specific ones for special useage.</p>
+<p>&nbsp;</p>
+<p>If you have to load the Symbols, Which means keywords, syntax(s), and so on, 
+thendo the folloing steps</p>
+<p>1, Select the FlowChart button (Far Left button )</p>
+<p>2. Then on the Flowchart Screen, Select the third button (A file folder)</p>
+<p>3. Then on the File InputOutput screen select the folder with an arrow 
+pointing up (To open a file)</p>
+<p>4. Find and select the symbol file that you require.&nbsp; </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; a. You might need to repeat opening symbols. 
+depending on your language.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; b. You will need a Keyword symbol file,</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; c, An operator ymbol file.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; d. a function keyword file.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; f. One or more files for the symbols sintax.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; g. OR itmight all becontained in a single file of 
+the computer language name,and the extension of *.Symbol.</p>
+<p>5. When you save a FlowChart all of the symbol files will besaved into the 
+flowchart file.&nbsp; The symbol files are the basis on which FlowChart uses to 
+'translate' to and from a computer language.&nbsp; Different symbol files are 
+required for different languages, and dialects of languages,</p>
+<p>6.&nbsp; Next go back to the Symbol Screen.&nbsp; (Second buttonfrom the 
+left)</p>
+<p>7.&nbsp; The Symbol screen has two rows of buttons.&nbsp; The top row is to 
+edit symbols.&nbsp; The second row is the defaults that are applied to editing.&nbsp; 
+Each button needs to have a default selected.&nbsp; The buttons shows what the 
+current default is.&nbsp; </p>
+<p>8.&nbsp; Last enter a name of the next point to add.&nbsp; Thetext box to 
+enter that is at the right of the buttons. (This will not be used until you add 
+a point to a symbol, but needs to be there anyway (for now)</p>
+<p>9.&nbsp; Goto the FlowChart screen again(first button on the left)</p>
+<p>10.&nbsp; Select the select a symbol button.&nbsp; A drop down will appear 
+with the defined symbols for this language.</p>
+<p>11. You can now place that symbol on the FlowChart.</p>
+<p>12 To place paths (lines connecting the logic and data, The button with a 
+line and circles at the ends is the 'make a path connection. </p>
+<p>13.&nbsp; Where ever two paths end at the same location, both must have the 
+same path name (The path name is actually the name of the variable in the source 
+code.)</p>
+<p>14. Continue placing symbols and connectingthem with paths.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Additional Notes:</p>
+<p>1. A symbol can be made by typeing in a line of source code.&nbsp; The 
+program will look for a symbol that matches the syntax and place that one the 
+Flowchart with Paths connecting them.&nbsp; If no syntaxmatches, it will create 
+a symbol, and then placethat one one the Flowchart.</p>
+<p>2. A FlowChart can be started from the File Input/Output screen with the text 
+to FlowChart button.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; a. writting on the left of the button and symbols on 
+the right makes source into flowchart</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; b. writing on the right of the button and the 
+symbols on the left makes the source code form the FlowChart.&nbsp;</p>
+<p>2. If the auto router is turned on, it will make paths to connect any two 
+paths with the same name.&nbsp; (A background task, so it might take a while to 
+'catch up' to where new paths and data is entered.</p>
+<p>3. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul class="auto-style14">
+	<li>105 Wrong table name : Name of the table, This should never happen, as 
+	the names of the table are fixed.</li>
+	<li>106 FileCounter: Invalid table name. This should never happen, as the 
+	names of the tables are fixed. Ignored</li>
+	<li>107 Keyward blank: an import keyword, operator, or function name did not 
+	have a value after the equal siqn, Ignored.</li>
+	<li>108 a Function, operator or keyword was imported twice. It is ignored.</li>
+	<li>109 The De-Compiler (source code to FlowCHart) added a line, and did not 
+	get a valid symbol name. The cause and work around for this is unknown.</li>
+	<li>111 The symbol &gt;??&lt; was not found: FlowChart failed to find this symbol 
+	name in the tables. The binary search could have failed, or an invalid name 
+	imported.</li>
+	<li>112 The syntax {[(variablename.properity)]} is not correct, a period was 
+	found before the variablename.</li>
+	<li>113 The period is after the end of the replacement. The syntax 
+	{[(variablename.properity)]} is not correct, a period was found after the 
+	properity </li>
+	<li>114 during replacement the syntax {[(variablename.properity)]} is not 
+	correct, because of an equal sign not following after the end to assign the 
+	replacement value</li>
+	<li>115 the end of The syntax {[(variablename.properity)]} = value is not 
+	correct, The next replacement is before the value or equal sign.</li>
+	<li>116 The syntax {[(variablename.properity)]} =value is not correct, the 
+	variablename, or the properity is usually missing.</li>
+	<li>117 Two paths have the same paths in them. This is usually because of 
+	two path having the same end point.</li>
+	<li>118 See 117</li>
+	<li>119 This happens when FlowChart tries to make a pathway between two ends 
+	of existing paths.</li>
+	<li>121 Two differant paths: This happens in one of two conditions, if two 
+	paths connect at the same location with different names, or two paths have 
+	the same name. If the first then move one end of one of the paths. On the 
+	second, it is a bug, and on the list to be fixed.</li>
+	<li>124 Symbol graphics table can only have /point, /line all other codes in 
+	a symbol will create this message</li>
+	<li>127 Only /path,&nbsp;&nbsp; located symbol&nbsp; and /constants can be moved on the FlowChart 
+	Editor, /error and /unknown and all others are ignored.</li>
+	<li>128 A button has not placed the mouse mode into doing any thing. Press 
+	one of the buttons Add, Move, Delete first. Items can not be selected, they 
+	are operated on immeditily.</li>
+	<li>131 Can only move /path,&nbsp;&nbsp; located symbol , and /constant. FlowChart tried to move 
+	something else at that location, move the path segment,&nbsp;&nbsp; located 
+	symbol , or constant first, or 
+	delete this unknown.</li>
+	<li>132 FlowChart could not find an object to move where the mouse button 
+	was pressed down. Try again, Remember that the symbol select point is at the 
+	center of the symbol. Selecting a point or a line of the symbol is ignored. 
+	While on the FlowChart editor screen, it only worlk on symbols, paths, and 
+	constants.</li>
+	<li>133 FlowChar could not find a point or line to move on the Symbol 
+	Screen. </li>
+	<li>134 the X (or Y) was not found in the indexed list of coordinates.</li>
+	<li>135 All of the drop down buttons on the too strips are create with data 
+	from the FlowChart that is being made. This message is saying that the item 
+	is not in that list.</li>
+	<li>136 This shows an internal problem with the index of a table. Any time 
+	it finds this problem it will resort.</li>
+	<li>138 This shows an internal problem with the index of a table. Any time 
+	it finds this problem it will resort.</li>
+	<li>139 This shows an internal problem with the index of a table. Any time 
+	it finds this problem it will resort.</li>
+	<li>141 The message occures when FlowChart is looking for something in a 
+	table and it past the last in the list. It happens when items are being 
+	added to a table.</li>
+	<li>142 This shows an internal problem with the index of a table. Any time 
+	it finds this problem it will resort.<br />
+	143 The message occures when FlowChart is looking for something in a table 
+	and it past the last in the list. It happens when items are being added to a 
+	table.</li>
+	<li>144 This message occures when a binary search is under way and the item 
+	that is being searched for is beyound the end of the table.</li>
+	<li>147 Internal bug, the binary search between two points, and the value of 
+	the lower item is greater than the upper item (so it will resort)</li>
+	<li>148 Internal bug, the binary search between two points, and the value of 
+	the lower item is greater than the upper item (so it will resort)</li>
+	<li>152 The item searched for is beyound the end of the table.</li>
+	<li>153 The item searched for is beyound the end of the table.</li>
+	<li>154 There is no index pointing to this item.</li>
+	<li>155 Both, Input, All, OptionalBoth, OptionalInput, OptionalOutput. 
+	Output are the only acceptable values for points to have as inputs or 
+	outputs.</li>
+	<li>156 When counting the number and types of points, if there is a symbol 
+	record that does not have a countable XY then this message comes up.</li>
+	<li>157 Counting the numbers of paths with the same name. Ignore this 
+	message</li>
+	<li>158 An invalid index is found .when searching for this symbol name.</li>
+	<li>159 Correcting an internal index pointer that is pointing to a wong 
+	table item.</li>
+	<li>161 When a binary search fails, then the entire list is searched for the 
+	item in the table.and repair the index.</li>
+	<li>162 The Symbols must be out of order, because the first one found was 
+	not a /name code with the correct symbol name. Resorting to correct this 
+	problem..</li>
+	<li>163 Looking up a message number to display failed.</li>
+	<li>165 The data type has an invalid color name.</li>
+	<li>166 The color BLACK is not in the color table. (The default color when 
+	all else fails.</li>
+	<li>167 With an invalid data type or invalid color name the color Black is 
+	used</li>
+	<li>168 An error record was inserted in to the flow chart.</li>
+	<li>171 When an invalid data type name is found, then the datatype Errored 
+	is used., which assumes that it is defined. (FlowChart defines this as Red, 
+	1 byte, width 1)</li>
+	<li>172 Datatype can not be found to draw the input/output arrows.</li>
+	<li>173 Neither Color name or Datatype name is valid.</li>
+	<li>174 Not able To find symbol name</li>
+	<li>175 Unable To find this symbol name. </li>
+	<li>176 Can Not find the symbol name.</li>
+	<li>177 Unknown FlowChart code. Not&nbsp;&nbsp; located symbol , path 
+	segment , constant, /error</li>
+	<li>178 Starting the search from the beginning, because the binary search 
+	failed.</li>
+	<li>179 Failed to find the symbol named in the symbol graphics table.</li>
+	<li>181 Not a /name or a /point record in the symbol graphics table.</li>
+	<li>182 Failed to find symbol name in the symbol table.</li>
+	<li>183 When comparing three items in a table (A, B, C), A should always be 
+	smaller than C, but all comparisons of B to A and C fail.</li>
+	<li>184 Comparing the numbers A and B, A is not less than, equal to, or 
+	grater than B. (So if you get this error then the physics of the universe 
+	has changed.</li>
+	<li>185 Comparing the strings A and B, A is not less than, equal to, or 
+	grater than B. (So if you get this error then the physics of the universe 
+	has changed.</li>
+	<li>186 FlowChart is trying to find out if what is seeing is a variable name 
+	or something else.</li>
+	<li>188 When adding symbol graphics to a symbol that has not be defined 
+	first, it will add a symbol where this message is.</li>
+	<li>192 The index of the symbol is outside the bounds of the table.</li>
+	<li>193 FlowChart is checking itself to make sure that it is adding a path 
+	segment 
+	record, when adding a path segment record.</li>
+	<li>194 FlowChart is checking itself to make sure that it is adding a&nbsp;&nbsp; 
+	located symbol&nbsp; 
+	record, when adding a&nbsp;&nbsp; located symbol&nbsp; record.</li>
+	<li>195 Keywords table is out of order, so it is resorting.</li>
+	<li>196 Keywords table is out of order, so it is resorting.</li>
+	<li>197 FlowChart is checking itself to make sure that it is adding a 
+	/point, /name, /error record to the symbol graphics when adding a record.</li>
+	<li>201 FlowChart is checking itself to make sure that it is not adding a 
+	duplication of a symbol graphics record.</li>
+	<li>202 SymbolName, RotationName, IndexSymbol)</li>
+	<li>203 SymbolName, IndexNamed, IndexSymbol)</li>
+	<li>204 This symbol is not in the symbol list, So no symbol graphics can be 
+	found to draw.</li>
+	<li>205 Everything possible has been tried, but the symbol is either not 
+	there, or there are no symbol graphics to display</li>
+	<li>206 FlowChart could not tell what part of syntax this is. It thinks it 
+	is not letters, digits, a keyword, a function name, an operator, a 
+	replacement string, a comment , a multi line character (ie ':') it is 
+	unknown. This need notice needs to goto FlowChartComputerLanguage @ Gmail . 
+	Com</li>
+	<li>207 The syntax {[(variablename.properity)]} is not correct, it is 
+	missing )]}.</li>
+	<li>208 The syntax {[(variablename.properity)]} is not correct, it is 
+	missing {[(.</li>
+	<li>209 The syntax {[(variablename.properity)]} is not correct, it is not 
+	letters and numbers, but has a period. (C variable names require that a 
+	period is /C_L_VarChars=. To include as valid character for a variable name.</li>
+	<li>211 FlowChart is checking itself to make sure that searching for a 
+	keyword is not beyond the end of the table</li>
+	<li>212 A Binary search for a keyword failed. A item by item search found 
+	it.</li>
+	<li>213 FlowChart is checking itself to make sure that what it found is in 
+	the table limits.</li>
+	<li>214 Binary search for a function name failed, but an item by item search 
+	found it anyway.</li>
+	<li>215 Binary search for a operator failed, but an item by item search 
+	found it anyway.</li>
+	<li>216 FlowChart while parsing the syntax or code line to determine what 
+	part of grammer this is, found a {[( and )]} but can not idenitify what it 
+	is.</li>
+	<li>221 Can not sort two records because one of the are outside the table 
+	limits.</li>
+	<li>222 Can not sort two records because one of the are outside the table 
+	limits.</li>
+	<li>224 The X is outside the symbol graphics area. It could be because the 
+	symbol is outside (-250 to 250) which when added to an offset of 250 makes 
+	it outside the image area area oif 0-500 in the X and also in the Y.</li>
+	<li>225 The X is outside the symbol graphics area. It could be because the 
+	symbol is outside (-250 to 250) which when added to an offset of 250 makes 
+	it outside the image area area oif 0-500 in the X and also in the Y.</li>
+	<li>226 The X is outside the symbol graphics area. It could be because the 
+	symbol is outside (-250 to 250) which when added to an offset of 250 makes 
+	it outside the image area area oif 0-500 in the X and also in the Y.</li>
+	<li>227 The X is outside the symbol graphics area. It could be because the 
+	symbol is outside (-250 to 250) which when added to an offset of 250 makes 
+	it outside the image area area oif 0-500 in the X and also in the Y.</li>
+	<li>228 FlowChart can not tell if you are on the FlowChart or Symbol 
+	screens.. So it can not convert from the XY to the XY for the screen image 
+	area.</li>
+	<li>231 FlowChart is on the editor screen, but it has a conversion that is 
+	not a&nbsp;&nbsp; located symbol , path segment or /constant.so the XY is NOT snapped to a grid.<br />
+	</li>
+	<li>233 FlowChart is on the symbol screen, and the record is not a /point or 
+	a /line, so no grid snap for this record.</li>
+	<li>234 The Symbol X data is under the bounds of the symbol (0-500)<br />
+	</li>
+	<li>235 The Symbol X data is over the bounds of the symbol (0-500)<br />
+	</li>
+	<li>236 The Symbol Y data is under the bounds of the symbol (0-500)<br />
+	</li>
+	<li>237 The Symbol Y data is over the bounds of the symbol (0-500)<br />
+	</li>
+	<li>238 FlowChart does not know if the conversion is for the editor, or 
+	symbol screens.<br />
+	</li>
+	<li>239 See 239<br />
+	</li>
+	<li>241 FlowChart failed to find a color name of a data type or a color 
+	named.<br />
+	</li>
+	<li>242 The index to the color table is out of bounds of the table size.<br />
+	</li>
+	<li>243 FlowChart has a problem importing a name record.<br />
+	</li>
+	<li>245 FlowChart is self checking that what it thought it did, it actually 
+	did do.<br />
+	</li>
+	<li>246 Yes, No, or cancel was not selected as the button for a message box.<br />
+	</li>
+	<li>247 The index does not point to a valid color.<br />
+	</li>
+	<li>248 The index does not point to a valid color.<br />
+	</li>
+	<li>249 Binary search failed, so self checking that the color name is not in 
+	the table.<br />
+	</li>
+	<li>251 The symbol placed on the flow chart does not exist in the symbol 
+	table.</li>
+	<li>252 This is the closest point found.</li>
+	<li>253 This is the closest point found</li>
+	<li>254 Checking All Paths that connect<br />
+	</li>
+	<li>255 Checking All Paths that connect<br />
+	</li>
+	<li>256 Checking All Paths that connect</li>
+	<li>257 Checking All Paths that connect<br />
+	</li>
+	<li>258 This path does not connect to anything
+	</li>
+	<li>261 Check error 729 ,262 The name of this point is not incode in the 
+	syntax code text,
+	</li>
+	<li>262 Check error 729 ,261 The name of this point is not incode in the 
+	syntax code text,
+	</li>
+	<li>274 there is no symbol name.
+	</li>
+	<li>275 This symbol name is not found in the symbol name table.<br />
+	</li>
+	<li>277 Looking for a path and found something else closer But it is not a 
+	path<br />
+	</li>
+	<li>278 Invalid index found at this location)<br />
+	</li>
+	<li>281 an invalid index is reset to be within the table bounds.</li>
+	<li>283 The index for the flowchart is invalid. in finding all paths that 
+	are connecte4d together.<br />
+	</li>
+	<li>284 The index is below and also above the table size.&nbsp; This is 
+	another change in the physics of the universe.</li>
+	<li>285 The index is below and also above the table size.&nbsp; This is 
+	another change in the physics of the universe.<br />
+	</li>
+	<li>286 The selected color is not found in the color table.<br />
+	</li>
+	<li>291 The data type table has an data item out of order in the table.<br />
+	</li>
+	<li>292 Searching for nothing in the table always fails here.<br /></li>
+	<li>293 Failed binary search for width, found it searching each item.<br />
+	</li>
+	<li>294 The color table is out of order.<br /></li>
+	<li>295 The color table is either out of order, or searching for nothing 
+	always fails here.<br /></li>
+	<li>296 FindColor() Failed to find it but a search of each and every one 
+	turned it up<br /></li>
+	<li>297 Trying to get a Y2 value outside the table bounds.<br /></li>
+	<li>298 Trying to get a data type with an index that is ouside the table 
+	bounds.</li>
+	<li>
+	<p class="auto-style15">299 Path and symbol names should not start with {[(</p>
+	</li>
+	<li>301 Unable to find the data type.&nbsp; The Datatype of Errored is used 
+	instead (Red)<br /></li>
+	<li>302 The code of the graphics on the flow chart is unknown (NOT&nbsp;&nbsp; 
+	located symbol , path segment, /delete, /constant, /error)<br /></li>
+	<li>304 The name of the path is not the name of the linked path.&nbsp; The 
+	list of connected paths has a path in it with a different name, which means 
+	that a path is connected to connected paths with a different name.&nbsp; 
+	This happens whant two different groups of paths have a common connection 
+	point.&nbsp; This means that the flow chart shows two variables that are the 
+	same, but with different names. <br /></li>
+	<li>305 This datatype does not have a valid color.&nbsp; The color name is 
+	not one in the color table. <br /></li>
+	<li>306 Message number and options must be between 10 and 10,000</li>
+	<li>307 No Program Text.&nbsp; So it must be a comment?</li>
+	<li>308 unknown Character&nbsp;&nbsp; This is NOT a number, letters, 
+	variable, comment, extended variablecharacter, quote mark, keyword, function 
+	name, operator, or listed special character.</li>
+	<li>309 character&nbsp; This is a character a number, letters, variable, 
+	comment, extended variablecharacter, quote mark, keyword, function name, 
+	operator, or listed special character. or unknown (see 308)<br /></li>
+	<li>310 Unknown character,&nbsp; this is NOT a number, letters, variablename, 
+	special list character, the start of a comment, special variable character, 
+	quote, keyword, function name, operator.</li>
+	<li>311 Variable is missing the end )]}. But has the first }])&nbsp; and has 
+	a period.<br /></li>
+	<li>315 Variable is missing the Start )]} and has the period<br /></li>
+	<li>316 Unknown what this is!<br /></li>
+	<li>324 This is an unknown.&nbsp; It is not a variable, keyword etc.</li>
+	<li>325 The flowchart screen selected symbol does not match symbol screen 
+	selected symbol.&nbsp; The two screens both use the same list of symbols, 
+	and should always be the same all of the time.</li>
+	<li>326 The number Of symbols In the FlowChart And Symbol Screen's do not 
+	match. The flowchart screen selected symbol does not match symbol screen 
+	selected symbol.&nbsp; The two screens both use the same list of symbols, 
+	and should always be the same all of the time.</li>
+	<li>329 The internal severity code is not warning, error, display, status, 
+	wrong, or information.<br /></li>
+	<li>331 Two paths with the same name THis shows the two path segments. See 
+	332</li>
+	<li>332 Two paths with the same name This shows the two connected paths See 
+	331</li>
+	<li>333 Combining nets with different names? Why?&nbsp; FlowChart Doesn't 
+	know what else to do, so it combines the two connected paths together as on 
+	connected path with both names put together with an underscore between them.</li>
+	<li>334 There are no paths in this connected path table(See 331, 332)<br />
+	</li>
+	<li>341 Auto route did not find a clear path<br /></li>
+	<li>342 Auto route found a clear path<br /></li>
+	<li>343 Attempted path not clear<br /></li>
+	<li>344 failed when trying to connect two paths with different names.</li>
+	<li>345 A test show that the path is already routed together.</li>
+	<li>346 Unable to find a clear path this direction<br /></li>
+	<li>347 FlowChart editor screen code NOT&nbsp;&nbsp; located symbol ,path 
+	segment,/constant,/error, /orgin, 
+	when trying to connect a path somewhere.</li>
+	<li>351 FindingMyBugs: The x1 line symbol is out of bounds<br /></li>
+	<li>352 FindingMyBugs: The y1 line symbol is out of bounds</li>
+	<li>353 FindingMyBugs: The x2 line symbol is out of bounds</li>
+	<li>354 FindingMyBugs: The y2 line symbol is out of bounds</li>
+	<li>355 FindingMyBugs: The x1 point symbol is out of bounds</li>
+	<li>356 FindingMyBugs: The y1 point symbol is out of bounds</li>
+	<li>357 FindingMyBugs: symbol code is NOT /line, /point, /name.<br /></li>
+	<li>359 There is no symbol graphics<br /></li>
+	<li>361 The symbol name was not found in the symbol table.<br /></li>
+	<li>362 FindingMyBugsCheckForErrors:&nbsp; the master symbol table and the 
+	symbol graphics tables are not working together.&nbsp; The name of the 
+	symbol in the master symbol table does not match the name of the symbol in 
+	the symbol graphics list.</li>
+	<li>363 Unable to find this data type by name in the datatype table.</li>
+	<li>364 invalid Color for Datatype.&nbsp; The name of the color is not in 
+	the color table.<br /></li>
+	<li>365 This is not a variable name, quote, comment, keyword, function, 
+	operator, numberletter, know special character,</li>
+	<li>366 empty SinTax:&nbsp; The symbol has no syntax to make source code, so 
+	it will create it from the micro code text.<br /></li>
+	<li>367 Unable to find the Path Name.<br /></li>
+	<li>368 Unable to find the symbol XY.<br /></li>
+	<li>371 On the symbol screen there is no options for input/output for a 
+	/point.<br /></li>
+	<li>372 Point name Is Nothing changed unknown</li>
+	<li>374 The name of the point is not in the micro text<br /></li>
+	<li>375 Two different paths with the same name.<br /></li>
+	<li>376 Two path links have the same path<br /></li>
+	<li>377 Error messages inside this symbol.&nbsp; When making the syntax for 
+	this code line&nbsp; it found an /error or unknown code.<br /></li>
+	<li>378 Unknown symbol graphics codes were encountered.</li>
+	<li>379 Logic can only have an input or an output, because a Path can only 
+	have one output (destiantion)</li>
+	<li>381 Counted an unknown point type</li>
+	<li>382 Warning the name Of the point Is Not In the program code.<br /></li>
+	<li>383 The symbol screen does not have enough point names in the drop down 
+	list.</li>
+	<li>384 invalid datatype name<br /></li>
+	<li>385 FindingMyBugsPoints: The datatype table points to an invalid color name,
+	</li>
+	<li>386 This symbol Graphics code is not taken care of.&nbsp; Invalid symbol 
+	graphics code.<br /></li>
+	<li>387 Invalid rotation<br /></li>
+	<li>388 FindingMyBugsFlowChart: this might be an Invalid rotation.<br />
+	</li>
+	<li>389 FindingMyBugsFlowChart: Problem with names saved.&nbsp; The name in 
+	the path segment does not match the name in the connected paths table.</li>
+	<li>391 FindingMyBugsFlowChart: invalid code in the symbol table<br /></li>
+	<li>392 FindingMyBugsSymbols: Duplicate symbol name in the symbol graphics 
+	table.&nbsp; There are two symbols defined in the graphics table for the 
+	same symbol name.</li>
+	<li>393 FindingMyBugsSymbols: The same symbol name is found twice.&nbsp; 
+	This triggers a dump1 event to cause the file Dump1.txt to be created and 
+	written to with only the symbol graphic records.<br /></li>
+	<li>394 FindingMyBugsSymbols: Two symbol graphics with /name code and no 
+	/points, or /line between them.<br />
+	</li>
+	<li>395 FindingMyBugsSymbol:&nbsp; And&nbsp; the two /name records together 
+	are both the same name.</li>
+	<li>396 FindingMyBugsSymbols: the symbol graphics has a /unknown code but 
+	also has a symbol or point name.</li>
+	<li>397 See 761, also has no datatype (Might be required?) Possible bug, 
+	that needs to be reported and checked out with an email to 
+	<a href="mailto:FlowChartComputerLanguage@gmail.com?subject=Reporting an error 397">
+	FlowChartComputerLanguage@gmail.com</a></li>
+	<li>401 FindingMyBugsDataType:&nbsp; The data type table has the same data 
+	type name twice.</li>
+	<li>402 FindingMyBugsDataType: The index to the color of this data type does 
+	nis not a valid color</li>
+	<li>403 FindingMyBugsDataType:&nbsp; The data type color index pointer is 
+	outside the bounds of the color table.</li>
+	<li>404 FindingMyBugsDataType:&nbsp; There is no color for this data type : 
+	This error should be reported to FlowChartComputerLanguage.&nbsp; As it was 
+	just tested to see if it was within bounds.&nbsp; See 402, 403<br /></li>
+	<li>405 FindingMyBugsDataType:&nbsp; Datatype table is unsorted.&nbsp; A 
+	compare was made of three points that should have been in order, but the 
+	first was greater than the third.&nbsp; So a resort is required.</li>
+	<li>406 FindingMyBugsDataType:&nbsp; The three way compare test say's that 
+	the first items is null, and the last item is not, and it is also not the 
+	beginning of the file.&nbsp; The datatype table needs to be sorted.</li>
+	<li>407 FindingMyBugsDataType:&nbsp; The data type table is out of order, becase a data type name is empty before the next in the table.&nbsp; The 
+	table should always be in a indexed sorted order internally.<br /></li>
+	<li>408 FindingMyBugsDataType:&nbsp;&nbsp; The datatype List is out of 
+	order, because the data type name is greater than the next in the table.</li>
+	<li>409 FindingMyBugsDataType:&nbsp; The datatype List has a duplicate </li>
+	<li>411 FindingMyBugsDataType:&nbsp; See 409, This message show the three 
+	datatype names of the duplicate.</li>
+	<li>412 FindingMyBugsDataType:&nbsp; The list has a duplicate.&nbsp; The 
+	center datatype name&nbsp; is the same name as the next in the list.</li>
+	<li>413 FindingMyBugsDataType:&nbsp; The center compare is null, and is OK, 
+	there there are no entries in the data type table.&nbsp; Other wise it is a 
+	problem, because a null should never be before or after a null.&nbsp; (The 
+	first and last entries in all of the tables are null, and is used to compare 
+	to see if we are at the first or last .)</li>
+	<li>414 FindingMyBugColore:&nbsp; color name table not in order&nbsp;&nbsp; 
+	Two entries in the sorted color table is not in order.&nbsp; The color name 
+	was tested against the next color name and was found to be greater than the 
+	next one.&nbsp; So the color name table is out of order and needs to be 
+	re-sorted.<br /></li>
+	<li>415&nbsp; FindingMyBugColore:&nbsp; A three way compare was made and 
+	found that the first item in the color table list was greater than the third 
+	in the list.&nbsp; So the color name table is out of order.</li>
+	<li>416&nbsp; FindingMyBugColore:&nbsp; A three way compare found that the 
+	first was not a null, and the second was greater than it.</li>
+	<li>417&nbsp; FindingMyBugColore:&nbsp; A three way compare found that the 
+	second was less than the first.&nbsp; The color table is out of order.</li>
+	<li>418&nbsp; FindingMyBugColore: A three way compare found that the second 
+	was greater than the third.&nbsp;&nbsp; Color Table is out of order </li>
+	<li>419&nbsp; FindingMyBugColore:&nbsp; A three way test shows that the 
+	first and second are equal.&nbsp; The Color table should never have a 
+	duplicate.</li>
+	<li>421&nbsp; FindingMyBugColore:&nbsp; A three way compare found that the 
+	second was equal to the third.&nbsp; The color table should never have a 
+	duplicate.</li>
+	<li>422&nbsp; FindingMyBugColore:&nbsp; The center of a three way compare 
+	was empty.&nbsp; A three way compare should never be comparing three empties 
+	together. ?</li>
+	<li>424 A dropdown list is being fixed so that the text properity has the 
+	value given.&nbsp; See425</li>
+	<li>425 A text string is being fixed so that the text has the value of the 
+	drop down,&nbsp; See 424</li>
+	<li>426 Selection and drop downs text do not match.</li>
+	<li>427&nbsp; FindingMyBugsDropDown: The color selection does not match the 
+	selected drop down.</li>
+	<li>428&nbsp; FindingMyBugsDropDown: The data type selection does not match 
+	the selected from the drop down.</li>
+	<li>429&nbsp; FindingMyBugsDropDown: The input/output/both selection does 
+	not match the drop down.</li>
+	<li>431&nbsp; FindingMyBugsDropDown: The rotation selection does not match 
+	the drop down.</li>
+	<li>432&nbsp; FindingMyBugsDropDown: The FlowChart editor selection symbol 
+	screen selected symbol.<br /></li>
+	<li>433&nbsp; FindingMyBugsDropDown: The symbol selection doess not match 
+	the symbol screen drop down
+	</li>
+	<li>434&nbsp; FindingMyBugsDropDown: The symbol selection does not match the 
+	FlowChart editor screen drop down.</li>
+	<li>435&nbsp; FindingMyBugsDropDown: The path start selection does not match 
+	the drop down.</li>
+	<li>
+	<p class="auto-style15">436 FindingMyBugsDropDown: The path end selection 
+	does not match the drop down.</p>
+	</li>
+	<li>
+	<p class="auto-style15">437 FindingMyBugsDropDown: The path style selection 
+	does not match the drop down.</p>
+	</li>
+	<li>
+	<p class="auto-style15">438 FindingMyBugsDropDown: The number of data bytes 
+	selection does not match the number in the drop down.</p>
+	</li>
+	<li>
+	<p class="auto-style15">439 FindingMyBugsDropDown: The symbol select drop 
+	down on the symbol screen has a duplicate symbol name.<br /></p>
+	</li>
+	<li>
+	<p class="auto-style15">&nbsp;441 FindingMyBugsDropDown: The FlowChartScreen 
+	Screen and Symbol Screen does not have the same number of symbol names.</p>
+	</li>
+	<li>
+	<p class="auto-style15">442 FindingMyBugsDropDown: The symbol select drop 
+	down has a duplicate Symbol name.</p>
+	</li>
+	<li>
+	<p class="auto-style15">443 FindingMyBugsNamed: Two symbols with the 
+	name name.</p>
+	</li>
+	<li>
+	<p class="auto-style15">444 FindingMyBugsNamed: The symbol name 
+	table is out of order or there is a duplicate symbol name.<br /></p>
+	</li>
+	<li>
+	<p class="auto-style15">445 FindingMyBugsNamed: Duplicate in the 
+	symbol name table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">446 FindingMyBugsNamed: Two Symbols with 
+	the same syntax. When the syntax is searched for it might fine either 
+	one of the two. Each symbol should have a unique syntax to be used 
+	when decompileing from a computer language into the FlowChart Computer 
+	Language.</p>
+	</li>
+	<li>
+	<p class="auto-style15">447 FindingMyBugsNamed: There are 
+	two indexs pointing to the same symbol. This means that there is a 
+	symbol in the symbol name table that is not referenced. This needs to 
+	be sent to&nbsp;
+	<a href="mailto:FlowChartComputerLanguage@gmail.com?subject=Reporting an error 447">
+	FlowChartComputerLanguage@gmail.com</a>.</p>
+	</li>
+	<li>
+	<p class="auto-style15">448 FindingMyBugsNamed: This is counting 
+	the number of duplicate indexes for each symbol.<br /></p>
+	</li>
+	<li>
+	<p class="auto-style15">449 FindingMyBugsNamed: This is the 
+	total number from 448 message above.</p>
+	</li>
+	<li>
+	<p class="auto-style15">451 FindingMyBugsKeyWords: A keyword is 
+	found twice in the keyword table.. This should not happen, because 
+	duplicate keywords are not added when they are found from the import file.</p>
+	</li>
+	<li>
+	<p class="auto-style15">452 FindingMyBugsKeyWords: The 
+	keyword table is not ordered correctly.</p>
+	</li>
+	<li>
+	<p class="auto-style15">453 FindingMyBugsKeyWords: A zero 
+	length keyword has been found. This should not happen, because blank 
+	keywords are not suppost to be added to the keyword table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">454 FindingMyBugsKeyWords: When 
+	this keyword is searched for, it is not defined as a keyword. This is 
+	because the keyword is also entered as something else, (such as a function 
+	name, a special part of the language grammer.</p>
+	</li>
+	<li>
+	<p class="auto-style15">455 FindingMyBugsKeyWords A keyworld with zero 
+	length has found its way into the keyword table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">456 FindingMyBugsPath: The flowchart record is not a 
+	path segment record. FlowChart thinks that this should be a path, and 
+	is checking that it is.</p>
+	</li>
+	<li>
+	<p class="auto-style15">457 FindingMyBugsPath: The index for the 
+	data type of this path segment does not have a valid data type.</p>
+	</li>
+	<li>
+	<p class="auto-style15">458 FindingMyBugsPath: The path name is 
+	not in the link list. The link list is a table that has a list of all 
+	of the path segments that are connected together. So every path 
+	segment should have an entery in the link table by path name.</p>
+	</li>
+	<li>
+	<p class="auto-style15">459 FindingMyBugsPath: the two path 
+	segments are in the same link table, but there are no path segments 
+	connecting them together.</p>
+	</li>
+	<li>
+	<p class="auto-style15">461 FindingMyBugsPath: A number in 
+	the links table might not be pointing to a valid path segment, or the index might 
+	be invalid (zero).</p>
+	</li>
+	<li>
+	<p class="auto-style15">462 FindingMyBugsPath: A 
+	zero index was in the link table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">463 A condition that never occurs Report to&nbsp;
+	<a href="mailto:FlowChartComputerLanguage@gmail.com?subject=Reporting an error 463">
+	FlowChartComputerLanguage@gmail.com</a></p>
+	</li>
+	<li>
+	<p class="auto-style15">464&nbsp;A condition that never occurs Report to&nbsp;
+	<a href="mailto:FlowChartComputerLanguage@gmail.com?subject=Reporting an error 464">
+	FlowChartComputerLanguage@gmail.com</a></p>
+	</li>
+	<li>
+	<p class="auto-style15">465 A condition that never occurs Report to
+	<a href="mailto:FlowChartComputerLanguage@gmail.com?subject=Reporting an error 465">
+	FlowChartComputerLanguage@gmail.com</a></p>
+	</li>
+	<li>
+	<p class="auto-style15">466 FindingMyBugsPath:&nbsp; This is the beginning 
+	of one of the index tables for X1, Y1, X2, or Y2.</p>
+	</li>
+	<li>
+	<p class="auto-style15">467 FindingMyBugsPath: This is the beggining of one 
+	of the index tables for X1, Y1, X2, or Y2.</p>
+	</li>
+	<li>
+	<p class="auto-style15">468 A condition that never occurs Report to
+	<a href="mailto:FlowChartComputerLanguage@gmail.com?subject=Reporting an error 468">
+	FlowChartComputerLanguage@gmail.com</a></p>
+	</li>
+	<li>
+	<p class="auto-style15">469 A condition that never occurs Report to
+	<a href="mailto:FlowChartComputerLanguage@gmail.com?subject=Reporting an error 469">
+	FlowChartComputerLanguage@gmail.com</a></p>
+	</li>
+	<li>
+	<p class="auto-style15">471 A condition that never occurs Report to
+	<a href="mailto:FlowChartComputerLanguage@gmail.com?subject=Reporting an error 471">
+	FlowChartComputerLanguage@gmail.com</a></p>
+	</li>
+	<li>
+	<p class="auto-style15">472 A condition that never occurs Report to
+	<a href="mailto:FlowChartComputerLanguage@gmail.com?subject=Reporting an error 472">
+	FlowChartComputerLanguage@gmail.com</a></p>
+	</li>
+	<li>
+	<p class="auto-style15">473 A key was pressed that was not one of the 
+	thoundsand's that FlowChart knows about.</p>
+	</li>
+	<li>
+	<p class="auto-style15">474 FindingMyBugsRouter_OnTop:&nbsp;&nbsp;&nbsp; 
+	Something other than a path segment,&nbsp;&nbsp; located symbol , /error was 
+	found in the FlowChart graphics table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">475 FindingMyBugsRouter_FindDupPath:&nbsp; This path 
+	has an end at a point of this symbol.</p>
+	</li>
+	<li>
+	<p class="auto-style15">476 FindingMyBugsRouter_FindDupPath:&nbsp; Something 
+	other than a path segment,&nbsp;&nbsp; located symbol , /error was found in 
+	the symbol graphics.</p>
+	</li>
+	<li>
+	<p class="auto-style15">477 Report this error number to
+	<a href="mailto:FlowChartComputerLanguage@gmail.com?subject=Reporting an error 477">
+	FlowChartComputerLanguage@gmail.com</a>.&nbsp; This is a probrm problem, in 
+	that the message number was not found in the message table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">478 The name of a data type or color is blank.</p>
+	</li>
+	<li>
+	<p class="auto-style15">479 The resulting color name is blank,&nbsp; This is 
+	because of a bad index usually.&nbsp; After trying to get a color for what 
+	ever item is being show/displayed a valid color name is not found.</p>
+	</li>
+	<li>
+	<p class="auto-style15">480 A code line was thought to have a variable name, 
+	but the variable name is blank.&nbsp; So a random variable name was created 
+	in the form vV_######</p>
+	</li>
+	<li>
+	<p class="auto-style15">481 While searching for a connection to a path 
+	segment it was not found,
+	</p>
+	<ul class="auto-style16">
+		<li>
+		<p class="auto-style15">and the four distances are: </p>
+		<ul class="auto-style16">
+			<li>
+			<p class="auto-style15">last path tested </p>
+			</li>
+			<li>
+			<p class="auto-style15">last non path</p>
+			</li>
+			<li>
+			<p class="auto-style15">the closest path</p>
+			</li>
+			<li>
+			<p class="auto-style15">the closest non path</p>
+			</li>
+		</ul>
+		</li>
+		<li>
+		<p class="auto-style15">And the index:</p>
+		<ul class="auto-style16">
+			<li>
+			<p class="auto-style15">The closest path</p>
+			</li>
+			<li>
+			<p class="auto-style15">the closest non path</p>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p class="auto-style15">484 while searching for a&nbsp;&nbsp; located symbol&nbsp; 
+	something else was found in the FLowChart graphics table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">486 While searching for a path segment, something 
+	else was found in the FlowChart graphics table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">488 While searching for something other than a path 
+	segment or&nbsp;&nbsp; located symbol , one of them was found in the 
+	FlowChart graphics table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">491 While trying to find a path segment between two 
+	existing path segments, one end turns out not to be at another path segment.</p>
+	</li>
+	<li>
+	<p class="auto-style15">492 Neither end of the path segment is connected..&nbsp; 
+	Bothe ends of the path segment is not connected to another path segment.</p>
+	</li>
+	<li>
+	<p class="auto-style15">493 The name of the paths are not the same as the 
+	path segment that is being routed to.&nbsp; The two path have different 
+	names but share the same end point.</p>
+	</li>
+	<li>
+	<p class="auto-style15">495 A path segment was made for two paths in the 
+	like table that was not connected.</p>
+	</li>
+	<li>
+	<p class="auto-style15">499 This message is show where it is trying to find 
+	a between two existing path segments.</p>
+	</li>
+	<li>
+	<p class="auto-style15">500 Invalid index to a path segment. One of the two 
+	points that is being routed to is invalid.</p>
+	</li>
+	<li>
+	<p class="auto-style15">501 A path segment is being made bwtween these two 
+	points.</p>
+	</li>
+	<li>
+	<p class="auto-style15">502 A path between these two sets of points could 
+	not be found.</p>
+	</li>
+	<li>
+	<p class="auto-style15">503 This is when a variable name starts with {[(.&nbsp;&nbsp; 
+	This is in the form of {[(variablename.property)]}.</p>
+	</li>
+	<li>
+	<p class="auto-style15">602 A symbol with this name already exist.&nbsp; New 
+	symbol graphics will be add (/point,/line), anthing else will be replaced, 
+	and anything not changed will be left alone.</p>
+	</li>
+	<li>
+	<p class="auto-style15">604 This was not a&nbsp;&nbsp; located symbol , path 
+	segment, /constant, or /error code, so nothing was done to it.</p>
+	</li>
+	<li>
+	<p class="auto-style15">607 Searching in the table the top limit was found 
+	to be have a nothing.</p>
+	</li>
+	<li>
+	<p class="auto-style15">611 This symbol is being renamed, and all of the 
+	FlowChart grphica is also changed to use the new symbol name.</p>
+	</li>
+	<li>
+	<p class="auto-style15">612 This gives the count of how many times the 
+	symbol was used, and renamed.</p>
+	</li>
+	<li>
+	<p class="auto-style15">622 The symbol graphics records table is a list that 
+	must be kept in order.&nbsp; When inserting into the list all of the 
+	pointers and indexes are then no long valid, so they have to be 'fixed' by 
+	reindexing/resorting.&nbsp; Since I use the famous(ly slow) buble sort to 
+	keep the list in the order that it needs to be in It takes a (extreamly) 
+	long time.&nbsp; This is one of the reasons for the VERY slow speed of this 
+	version of FlowChart Computer Lange. (Which is going to be addressed and 
+	fixed in a future version when I get around to it.)</p>
+	</li>
+	<li>
+	<p class="auto-style15">623 Pthe index into the drop down box is invalid (an 
+	error), to nothing is returnd because it is not in the drop down combo box.</p>
+	</li>
+	<li>
+	<p class="auto-style15">624 The index is bigger than the combobox list is 
+	long.&nbsp; So nothing can be returnd.</p>
+	</li>
+	<li>
+	<p class="auto-style15">625 The starting scale is imported with a /scale 
+	code (undocumented.) this shows what the code is change to and then the 
+	scale is limited to the min and max ranges mentioned above.&nbsp; Note that 
+	the scale must be between 32000 and 0 (the axcual scale is an integer that 
+	is 1,000 times the acale.&nbsp; Another reason that this is undocumented 
+	right now.</p>
+	</li>
+	<li>
+	<p class="auto-style15">626 Than device:\paths\FileName.txt of the three 
+	dump files can be changed with a /Dump=File1,file2,file3&nbsp;&nbsp;&nbsp;&nbsp; 
+	This is another undocumented features.&nbsp; Note that these three dump 
+	files are only going to be inthese version until the program seems to be 
+	working from people testing it for me and are finding fewer problem, bugs, 
+	and issues.&nbsp; (not the for see able future right now)</p>
+	</li>
+	<li>
+	<p class="auto-style15">627 The center of these two symbols is closer than 
+	the symbol size.&nbsp; Currently it is 500, but I expect that this number 
+	will become a import very soon, because what ever number I select does not 
+	seem to be enough.&nbsp; 500 Is the absolute minium that it can be (leaving 
+	no room to route path segments, so I might have already changed this to be 
+	at lease twice the symbol size?OK, I just change it to be 2 1/2 times the 
+	symbol size.</p>
+	</li>
+	<li>
+	<p class="auto-style15">628 While finding paths came up on a FlowChart 
+	graphics record that was not a path segment, or&nbsp;&nbsp; located symbol , 
+	/constant, or /origin</p>
+	</li>
+	<li>
+	<p class="auto-style15">629 While removing duplicates from the links table, 
+	it ended up having nothing in this link.</p>
+	</li>
+	<li>
+	<p class="auto-style15">631 Could not find this color name.</p>
+	</li>
+	<li>
+	<p class="auto-style15">637 There was a common XY point in two different 
+	link table records. both links had path segment records with different 
+	names. See 333 if they were combine after this message.</p>
+	</li>
+	<li>
+	<p class="auto-style15">638 The path segment is connected to a symbol.</p>
+	</li>
+	<li>
+	<p class="auto-style15">639 WARNING path segment is connected to something else, 
+	not a&nbsp;&nbsp; located symbol&nbsp; or a path segment.</p>
+	</li>
+	<li>
+	<p class="auto-style15">642 Symbol is connected to a path. otherwise see 643</p>
+	</li>
+	<li>
+	<p class="auto-style15">643 Symbol is NOT connected to a path.&nbsp; 
+	otherwise see 642</p>
+	</li>
+	<li>
+	<p class="auto-style15">644 It should be auto routed here if there is another point the the 
+	link table See 345, 346 to see if it was able to find a path.</p>
+	</li>
+	<li>
+	<p class="auto-style15">645 Should have programmed for because it is not a 
+	/line, /error</p>
+	</li>
+	<li>
+	<p class="auto-style15">646 The FlowChart graphics to be routed to is not 
+	another path.</p>
+	</li>
+	<li>
+	<p class="auto-style15">647FindingMyBugsCheckForErrors:&nbsp; The name of 
+	every point should appear in the micro code text and in the syntax text in 
+	the form {[(pointname.property)]} where the name of the point is in the 
+	symbol graphics records, and the property is usually .Pathname&nbsp; or 
+	.Variable.&nbsp; But any of the valid properities can be used.</p>
+	</li>
+	<li>
+	<p class="auto-style15">648 FindingMyBugPoints : when there are fewer than 
+	four /point or /line records, this message will appear for that symbol.&nbsp; </p>
+	</li>
+	<li>
+	<p class="auto-style15">649 FindingMyBugPoints : You are not working on any 
+	data for this symbol.&nbsp; There are only two points.&nbsp; (One for a 
+	CameFrom and one for a GoTo which are added to every line of code if 
+	DeCompiled.</p>
+	</li>
+	<li>
+	<p class="auto-style15">651 FindingMyBugPoints : When counting up the data 
+	points, the count of /point's that are not input, output, both is less than 
+	1.&nbsp; This is a catch all and really should be ignored.</p>
+	</li>
+	<li>
+	<p class="auto-style15">653 FindingMyBugPoints : The point name Is In the 
+	syntax text. This is as it should be, See 758.</p>
+	</li>
+	<li>
+	<p class="auto-style15">655 FindingMyBugPoints : The point name Is In the 
+	program code.&nbsp; This is as it should be. See 382</p>
+	</li>
+	<li>
+	<p class="auto-style15">657 FindingMyBugPoints :&nbsp; Everything Is OK</p>
+	</li>
+	<li>
+	<p class="auto-style15">658 FindingMyBugPoints : This is giving a list of 
+	point name in the drop down for error,&nbsp; See 659</p>
+	</li>
+	<li>
+	<p class="auto-style15">659 FindingMyBugPoints : The symbol point list box, 
+	does Not match the order Or point name for point in symbol.</p>
+	</li>
+	<li>
+	<p class="auto-style15">661 FindingMyBugPoints :&nbsp; The poiunt name does 
+	not match the point list in the drop down.&nbsp; See 383</p>
+	</li>
+	<li>
+	<p class="auto-style15">662 FindingMyBugPoints :&nbsp; Only the selected 
+	symbol that is displayed in the symbol screen can be checked.&nbsp; The 
+	selected symbol is not the symbol that is being checked.</p>
+	</li>
+	<li>
+	<p class="auto-style15">663&nbsp; FindingMyBugPoints :&nbsp; This message 
+	just shows what is going on.</p>
+	</li>
+	<li>
+	<p class="auto-style15">664 FindingMyBugPoints :&nbsp; This is not the 
+	selected symbol. only the select symbol is check for problems.</p>
+	</li>
+	<li>
+	<p class="auto-style15">665 FindingMyBugPoints :&nbsp; This is not checking 
+	for the colors being correct.&nbsp; (It's on the todo list.)</p>
+	</li>
+	<li>
+	<p class="auto-style15">666 FindingMyBugPoints :&nbsp; This record should 
+	not be in the symbol graphics table.&nbsp;&nbsp; This usually happens when 
+	the record is not used. (ie: a zero code for the record type).</p>
+	</li>
+	<li>
+	<p class="auto-style15">667 FindingMyBugFlowChart:&nbsp; This is the number 
+	of the option for the symbol.&nbsp; This is for future expansion in the 
+	symbol to do contintionals. (Not implemented yet, but here to make sure that 
+	it is test when I do write it.)</p>
+	</li>
+	<li>
+	<p class="auto-style15">668 FindingMyBugFlowChart:&nbsp; Flowchart has /unknow code, 
+	which is a zero, meaning that it has not been used, or it is outside the 
+	bounds of the table. </p>
+	</li>
+	<li>
+	<p class="auto-style15">669 FindingMyBugFlowChart:&nbsp; empty code 
+	(nothing) in the symbol table.&nbsp; Usually means that the index is outside 
+	the bounds of the table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">671 FindingMyBugSymbol :&nbsp; This record is not a 
+	symbol name , point, line, error, or unknown (zero and unused). </p>
+	</li>
+	<li>
+	<p class="auto-style15">672 A key was pressed and I am not doing anything.&nbsp; 
+	It might be unknown (See&nbsp; 473) or on the known list of named keys.</p>
+	</li>
+	<li>
+	<p class="auto-style15">673 There is an error (somewhere ) that is in the 
+	FlowChart graphics.&nbsp; <a href="#GraphicError1001">See</a> errors that 
+	are placed on the flow chart</p>
+	</li>
+	<li>
+	<p class="auto-style15">674&nbsp; Gives information about what is the 
+	closest path here.</p>
+	</li>
+	<li>
+	<p class="auto-style15">675&nbsp; No match to a path name was found but this 
+	is the next closest thing.</p>
+	</li>
+	<li>
+	<p class="auto-style15">676 The ends of these two paths do not meet.</p>
+	</li>
+	<li>
+	<p class="auto-style15">677 Nothing was found close to this end of a path to 
+	connect to.</p>
+	</li>
+	<li>
+	<p class="auto-style15">678 FlowChart Found two path connect at the same 
+	point, but were not the same path name.</p>
+	</li>
+	<li>
+	<p class="auto-style15">679 If an unknow color is used, then we try to find 
+	the closest match to a color in the color list.&nbsp; This is a tempory 
+	condition, as the FlowChart Computer Language should allow you to name and 
+	use any colors without limits (Well, OK, the limits are that colors have 
+	Red/Green/Blue/Alpha components.)&nbsp; It should not be limited to the 150 
+	nameds colors of Microsoft. (Altho, I can not see anyone using more than a 
+	twenty or thirty, but then I'm not an artist to design the graphics. :)</p>
+	</li>
+	<li>
+	<p class="auto-style15">709 If no color is somehow to draw lines or paths 
+	then it will be drawn in black.</p>
+	</li>
+	<li>
+	<p class="auto-style15">713 While parsing, a variable name was requested at 
+	a parsed item, but there is not that many items in the parse list.&nbsp; So 
+	a name is made in the form ParsedWord____TheWordParsed____MaxWordsParsed.&nbsp; 
+	Some how the number of the word that was parsed is greate the the number of 
+	words in the entire line of source code.&nbsp;&nbsp; This is another case of 
+	where the universal laws of physics have been violated.</p>
+	</li>
+	<li>
+	<p class="auto-style15">716 Symbol graphic data is limited to -250 to +250.&nbsp; 
+	Some XY was changed to be with in this limit.</p>
+	</li>
+	<li>
+	<p class="auto-style15">719 This is just an internal program warning that a 
+	Quote mark is being output to the source code text file.</p>
+	</li>
+	<li>
+	<p class="auto-style15">726 an undocumented feature (which is another way of 
+	saying that I haven't got it to work yet.) is that on the flow chart editor 
+	screen, you can enter code, imports, and a /route.&nbsp; The /route command 
+	will cause FlowChart to try and connect all of the named routes together, 
+	while avoiding going over other paths or through symbols.&nbsp; This message 
+	is shown for each path in the FlowChart graphics table that is works on.&nbsp; 
+	It will try both methods that I am working on.&nbsp; One is a backgraound 
+	continusly trying to find where paths need to be added. and the other one 
+	for every path that is already rounted, to check if any paths are needed to 
+	connect two path segments together.</p>
+	</li>
+	<li>
+	<p class="auto-style15">729 A, B&nbsp; The name of the point in the symbol 
+	graphics table is not in the macro code text, or the syntax code text (As 
+	{[(Pointname.</p>
+	</li>
+	<li>
+	<p class="auto-style15">731 A zero record type code was foun in the 
+	FlowChart graphics table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">735 Invalid index program error the array is not the same size as the index isam.&nbsp; 
+	This is another place where the universal laws of physics fail to work.&nbsp; 
+	Since the two arrays are changed in size at the same time and the same 
+	amount.</p>
+	</li>
+	<li>
+	<p class="auto-style15">736 Invalid index is below or above the sizee of the 
+	array.</p>
+	</li>
+	<li>
+	<p class="auto-style15">737 The index pointer array points to outside the 
+	bounds of the array</p>
+	</li>
+	<li>
+	<p class="auto-style15">738 Number array and ISAM is not the same size.&nbsp; 
+	Another case of where the universal laws of physics fail.</p>
+	</li>
+	<li>
+	<p class="auto-style15">739 Index of an array in outside the bounds of the 
+	array</p>
+	</li>
+	<li>
+	<p class="auto-style15">741 the index pointer to the array points to beyond 
+	the bounds of the array</p>
+	</li>
+	<li>
+	<p class="auto-style15">742 The index array points to an index that is 
+	outside the bounds of the table.</p>
+	</li>
+	<li>
+	<p class="auto-style15">753 The select symbol button is on both the 
+	FlowChart editor screen, and the symbol screen.&nbsp; They must always match 
+	in sixe, and a select symbol of one will trigger a select&nbsp; symbol for 
+	that symbol in the other.</p>
+	</li>
+	<li>
+	<p class="auto-style15">754 The select symbol button is on both the 
+	FlowChart editor screen, and the symbol screen.&nbsp; They must always match 
+	in sixe, and a select symbol of one will trigger a select&nbsp; symbol for 
+	that symbol in the other.</p>
+	</li>
+	<li>
+	<p class="auto-style15">755 When trying to find a path, at every turn it is 
+	reported here.</p>
+	</li>
+	<li>
+	<p class="auto-style15">680 This is a GotoNextLine line marker </p>
+	</li>
+	<li>
+	<p class="auto-style15">756 Starting to find a path</p>
+	</li>
+	<li>
+	<p class="auto-style15">681 This is a variable name.</p>
+	</li>
+	<li>
+	<p class="auto-style15">757 This is NOT the selected symbol.</p>
+	</li>
+	<li>
+	<p class="auto-style15">682 This is the closest location thto the path</p>
+	</li>
+	<li>
+	<p class="auto-style15">758 Finished found a path for two points in a path 
+	link.&nbsp; It does not mean that a complete connecting path is made, only 
+	one path segment is possible here, it will most likely NOT save this point 
+	because another path will prove dto be better in some way.</p>
+	</li>
+	<li>
+	<p class="auto-style15">683 The point name Is Not In the syntax With a variable attibute.&nbsp; 
+	There must be comething for the point name to replace in the symbol syntax.&nbsp; 
+	Such as , if the name of the point is ABC then there needs to be {[(ABC. in 
+	the syntax. {[(ABC. is incomplete and has to be&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	{[(ABC.PathName)]}&nbsp; or&nbsp; {[( ABC.Index)]}&nbsp;&nbsp; See
+	<a href="#Replacement_string">Replacement String Properities</a></p>
+	</li>
+	<li>
+	<p class="auto-style15">759 Ignoreing a graphics code of zero. See 666</p>
+	</li>
+	<li>
+	<p class="auto-style15">761 Need path for this line</p>
+	</li>
+	<li>
+	<p class="auto-style15">762 ignoring zero code in symbol graphics</p>
+	</li>
+	<li>
+	<p class="auto-style15">764 The symbol has an /error code. (This should only 
+	to the FlowChart)</p>
+	</li>
+	<li>
+	<p class="auto-style15">767 FindingMyBugsCheckNet_TableLinks : The two paths 
+	are connected See 459</p>
+	</li>
+	<li>
+	<p class="auto-style15">768 This is not a /path so we should not be routing 
+	to it.</p>
+	</li>
+	<li>
+	<p class="auto-style15">772 This message is a severity level ERROR</p>
+	</li>
+	<li>
+	<p class="auto-style15">773 This message is a severity level WARNING</p>
+	</li>
+	<li>
+	<p class="auto-style15">774 The binary search found the items.</p>
+	</li>
+	<li>
+	<p class="auto-style15">&nbsp;776 This path is not in the path links as 
+	being connected.</p>
+	</li>
+	<li>
+	<p class="auto-style15">778 This Point connected to this Path A </p>
+	</li>
+	<li>
+	<p class="auto-style15">779 This Point connected to this Path B </p>
+	</li>
+	<li>
+	<p class="auto-style15">781 Ignoreing zero code</p>
+	</li>
+	<li>
+	<p class="auto-style15">782 No Variable Name</p>
+	</li>
+	<li>
+	<p class="auto-style15">783 Path is connected to something</p>
+	</li>
+	<li>
+	<p class="auto-style15">
+	---------------------------------------------------------------------------------------------------------------------------------------------</p>
+	</li>
+	<li>
+	<p class="auto-style15">784 Path is connected to something</p>
+	</li>
+	<li>
+	<p class="auto-style15">785 These two are not connected.</p>
+	</li>
+	<li>
+	<p class="auto-style15">788 Routing path </p>
+	</li>
+	<li>
+	<p class="auto-style15">789 Make a path to </p>
+	</li>
+	<li>
+	<p class="auto-style15">790 Quto router option is turned off:</p>
+	</li>
+	<li>
+	<p class="auto-style15">791 saving a closer distance to something else</p>
+	</li>
+	<li>
+	<p class="auto-style15">792 Closest other path to route to</p>
+	</li>
+	<li>
+	<p class="auto-style15">793 Memory left : </p>
+	</li>
+	<li>
+	<p class="auto-style15">794 Searching for path Found something else</p>
+	</li>
+	<li>
+	<p class="auto-style15">794 Not a point</p>
+	</li>
+	<li>
+	<p class="auto-style15">795 Searching for path to&nbsp; Found something else</p>
+	</li>
+	<li>
+	<p class="auto-style15">795 Searching for path to </p>
+	</li>
+	<li>
+	<p class="auto-style15">797 Searching for path to </p>
+	</li>
+	<li>
+	<p class="auto-style15">803 Net is empty</p>
+	</li>
+	<li>
+	<p class="auto-style15">804 Problem with these two paths.</p>
+	</li>
+	<li>
+	<p class="auto-style15">805 Can not make a path from a blank path name</p>
+	</li>
+	<li>
+	<p class="auto-style15">807&nbsp; Path name does not match path links name</p>
+	</li>
+	<li>
+	<p class="auto-style15">807 Path not in any path link</p>
+	</li>
+	<li>
+	<p class="auto-style15">820 Path names do not match</p>
+	</li>
+	<li>
+	<p class="auto-style15">821 Path Name Problem </p>
+	</li>
+	<li>
+	<p class="auto-style15">822 Path Name Problem B</p>
+	</li>
+	<li>
+	<p class="auto-style15">823 Path Name Problem C</p>
+	</li>
+	<li>
+	<p class="auto-style15">824 Path Name Problem D</p>
+	</li>
+	<li>
+	<p class="auto-style15">830 trying to route between</p>
+	</li>
+	<li>
+	<p class="auto-style15">831 This is not a Path </p>
+	</li>
+	<li>
+	<p class="auto-style15">832 </p>
+	</li>
+	<li>
+	<p class="auto-style15">836  
+	different names error </p>
+	</li>
+	<li>
+	<p class="auto-style15">900 flowchart hint : Enter path name on FlowChart Screen. To add a constant 
+	to the FlowChart</p>
+	</li>
+	<li>
+	<p class="auto-style15">901 flowchart hint : Enter the name of the path in the 
+	tool strip text box</p>
+	</li>
+	<li>
+	<p class="auto-style15">902 flowchart hint : Adding Paths requires you To 
+	enter a path name</p>
+	</li>
+	<li>
+	<p class="auto-style15">903 symbol hint :&nbsp; symbolchanged has not been set/reset</p>
+	</li>
+	<li>
+	<p class="auto-style15">904 symbol hint : No color names have been entered 
+	or imported</p>
+	</li>
+	<li>
+	<p class="auto-style15">905&nbsp; symbol hint : No data types have been entered or 
+	imported.</p>
+	</li>
+	<li>
+	<p class="auto-style15">906&nbsp; symbol hint :No input/output has been made 
+	yet.</p>
+	</li>
+	<li>
+	<p class="auto-style15">907&nbsp; symbol hint :no line widths are available 
+	to be selected.&nbsp;</p>
+	</li>
+	<li>
+	<p class="auto-style15">908 symbol hint : FlowChart program issue, return this error message, 
+	a number of bytes is not available.</p>
+	</li>
+	<li>
+	<p class="auto-style15">909 symbol hint Either the line style, line start or 
+	line end of line drop down does not have a valid list</p>
+	</li>
+	<li>
+	<p class="auto-style15">910 symbol hint Select the input/output Option For the data path To this 
+	symbol from the input/output toolsrip dropdown button.</p>
+	</li>
+	<li>
+	<p class="auto-style15">911 symbol hint You need to enter a name of the 
+	point to be added, </p>
+	</li>
+	<li>
+	<p class="auto-style15">912 symbol hint Select the data type from the datatype 
+	tool strip dropdown button</p>
+	</li>
+	<li>
+	<p class="auto-style15">914 symbol hint Select a line style, start, and end</p>
+	</li>
+	<li>
+	<p class="auto-style15">915 symbol hint There is no symbol graphics in 
+	selected symbol&nbsp;&nbsp;&nbsp; Add symbol points and lines.</p>
+	</li>
+	<li>
+	<p class="auto-style15">916 symbol hint&nbsp; Select a symbol name</p>
+	</li>
+	<li>
+	<p class="auto-style15">917 symbol hint&nbsp; Select a rotation for placing the 
+	symbol from the rotation drop down button</p>
+	</li>
+	<li>
+	<p class="auto-style15">918 symbol hint&nbsp; select a symbol name from the select 
+	a symbol drop down button</p>
+	</li>
+	<li>
+	<p class="auto-style15">919 symbol hint&nbsp; Select the input or output to add 
+	symbol point</p>
+	</li>
+	<li>
+	<p class="auto-style15">920 symbol hint&nbsp; Need To Select a symbol named 
+	from the symbol selection tool strip drop down button </p>
+	</li>
+	<li>
+	<p class="auto-style15">921 symbol hint&nbsp; There is no rotation options in the 
+	list</p>
+	</li>
+	<li>
+	<p class="auto-style15">922 symbol hint&nbsp; Select a color from the color tool 
+	strip drop down button</p>
+	</li>
+	<li>
+	<p class="auto-style15">923 symbol hint&nbsp; Need To Select a color from the color 
+	tool strip drop down button </p>
+	</li>
+	<li>
+	<p class="auto-style15">951 flowchart No buttons allowed until you have selected a computer 
+	language&nbsp; Button Rules")</p>
+	</li>
+	<li>
+	<p class="auto-style15">952 FlowChart hint No FlowChart graphical information to delete", TopOfFile("FlowChart").ToString, 
+	"3") ' mst have "3"</p>
+	</li>
+	<li>
+	<p class="auto-style15">956 FlowChart hint There are no symbols defined to 
+	select</p>
+	</li>
+	<li>
+	<p class="auto-style15">999 All 999 messages can not be ignored.</p>
+	</li>
+	<li>
+	<p class="auto-style15">999 Can Not have X1</p>
+	</li>
+	<li>
+	<p class="auto-style15">999 Can Not have Y1</p>
+	</li>
+	<li>
+	<p class="auto-style15">999 Not doable </p>
+	</li>
+	<li>
+	<p class="auto-style15">------------------The following messages will be 
+	translated into other language (via Google Translate)</p>
+	</li>
+	<li>
+	<p class="auto-style15">1000&nbsp; the import bit options are "yes", "true", 
+	"on", "no", "false", "off" , all lower case please.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1001 The file was not open since it was not flagged 
+	to be as a read or write to the file.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1003 An index is in the array twice, which also 
+	means that there is an index missing.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1030 Not a /use, /line,&nbsp; /path, or /point.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1031 Not a /use, /path, /constant or /error.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1117 FlowChart graphics code is not a /use, /path, 
+	/constant, /error</p>
+	</li>
+	<li>
+	<p class="auto-style15">1163 The rotation is incorrect for the flowchart 
+	symbol object.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1164 This does not have a symbol name.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1167 The first two index pointers are the same.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1168 The random generated index pointer is to low.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1169 The first two index pointers are the same.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1211 The import directive is not a know directive.&nbsp; 
+	See
+<font COLOR="#000000" FACE="Times New Roman"><span STYLE="font-style: normal">
+<u><span STYLE="font-weight: normal" class="auto-style1">
+	<a href="#Syntax_Summary_for_FlowChart:">Syntax Summary for FlowChart</a> 
+	and <a href="#Syntax_Summary_for_Symbol_Library">Syntax Summary for Symbols</a></span></u></span></font></p>
+	</li>
+	<li>
+	<p class="auto-style15">1215 Item by Item search found what a binary search 
+	did not find.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1270 A binary search failed to find what a item by 
+	item search found.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1273 The rotation must be 1 to 16</p>
+	</li>
+	<li>
+	<p class="auto-style15">1280 Two index pointers point to the same items in 
+	the array, which means that there is an item that is not being 'seen' by the 
+	program.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1283 A program button has not been pushed to select 
+	what the mouse will do.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1375 This is an unknow FlowChart graphics code.&nbsp; </p>
+	</li>
+	<li>
+	<p class="auto-style15">1385 The index table is pointing to an array entery, 
+	but the array is empty. </p>
+	</li>
+	<li>
+	<p class="auto-style15">1402 The /name could not be added, so all following 
+	imports are ignored</p>
+	</li>
+	<li>
+	<p class="auto-style15">1403&nbsp; The /name could not be added, so all 
+	following imports are ignored</p>
+	</li>
+	<li>
+	<p class="auto-style15">1404&nbsp; The /name could not be added, so all 
+	following imports are ignored</p>
+	</li>
+	<li>
+	<p class="auto-style15">1406&nbsp; The /name could not be added, so all 
+	following imports are ignored</p>
+	</li>
+	<li>
+	<p class="auto-style15">1407&nbsp; The /name could not be added, so all 
+	following imports are ignored</p>
+	</li>
+	<li>
+	<p class="auto-style15">1408&nbsp; The /name could not be added, so all 
+	following imports are ignored</p>
+	</li>
+	<li>
+	<p class="auto-style15">1409&nbsp; The /name could not be added, so all 
+	following imports are ignored</p>
+	</li>
+	<li>
+	<p class="auto-style15">1410&nbsp; The /name could not be added, so all 
+	following imports are ignored</p>
+	</li>
+	<li>
+	<p class="auto-style15">1411&nbsp; The /name could not be added, so all 
+	following imports are ignored</p>
+	</li>
+	<li>
+	<p class="auto-style15">1433 FlowChart is checking itself if there are 
+	invalid indexes, end of table counters and the sizes of the arrays.</p>
+	</li>
+	<li>
+	<p class="auto-style15">1436 The message number must be between 9 and 10,000</p>
+	</li>
+	<li>
+	<p class="auto-style15">1438 An unknown record code </p>
+	</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Index</p>
+<p>buttons</p>
+<p>symbols</p>
+<p>flow chart</p>
+<p>FlowChart Computer Language</p>
+<p>&nbsp;</p>
+<p>General: </p>
+<p>&nbsp;</p>
+<p>/C<a HREF="#ComputerLanguage">omputerLanguageDialect</a></p>
+<p>/<a HREF="#ComputerLanguageCase">ComputerLanguageCase</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#ComputerLanguageComment">ComputerLanguageComment</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#ComputerLanguageExtention">ComputerLanguageExtention</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#ComputerLanguageMultiLine">ComputerLanguageMultiLine</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#ComputerLanguageProcess">ComputerLanguageProcess</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#ComputerLanguageVariableNameCharacters">ComputerLanguageVariableNameCharacters</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/Language&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#Code">Macro </a></p>
+<p><a HREF="#Code">Text, </a></p>
+<p><a HREF="#Code">/Program</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>/Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>/ThisCode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#Keyword_table">KeyWord</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#Function_name_table">Function</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#Operator_table">Operator</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#Set">Set_</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#Order">Order</a>&nbsp;</p>
+<p>Support Tables:</p>
+<p>&nbsp;/<a HREF="#Color">Color</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#Datatype">Datatype</a></p>
+<p>Symbol:</p>
+<p>/<a HREF="#Name">Name</a>&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#Point">Point</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>/<a HREF="#Line">Line</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>/NameOfFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>/Stroke&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>/Notes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>/Version&nbsp; </p>
+<p>/Author&nbsp;&nbsp;&nbsp; </p>
+<p>/Opcode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>FlowChart:</p>
+<p>/<a HREF="#Path">Path</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#Use">Use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/<a HREF="#Constant">Constant</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p>/Error&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p STYLE="margin-bottom: 0in"><br />
+</p>
+
+</body>
+
+</html>
